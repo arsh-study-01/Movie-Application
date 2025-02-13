@@ -1,0 +1,102 @@
+@font-face {
+  font-family: moviefont;
+  src: url(../Font/Liter-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  font-family: moviefont;
+}
+:root {
+  --white: white;
+  --black: black;
+  --gray: gray;
+  --headerBg: #161515;
+  --headerBglight: #1a1919;
+  --graytext: #dddddd;
+  --yello-icon: #999999;
+  --darkgray: #2e2d2d;
+  --yellow: yellow;
+}
+body,
+header,
+nav,
+menu {
+  border-color: white;
+}
+:has(> div > div) {
+  border-color: red;
+}
+:has(> div) {
+  border-color: green;
+}
+
+div > div > * {
+  border-color: yellow;
+}
+div > div > * > * {
+  border-color: white;
+}
+div > div > * > * > * {
+  border-color: orange;
+}
+div > div > * > * > * > * {
+  border-color: lightblue;
+}
+div > div > * > * > * > * > * {
+  border-color: pink;
+}
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: black;
+  position: relative;
+}
+button {
+  border: none;
+  color: black;
+}
+button:active {
+  transform: scale(0.98);
+}
+button:hover,
+i {
+  cursor: pointer;
+}
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+label {
+  cursor: pointer;
+}
+ol,
+ul {
+  list-style: none;
+}
+.header-icons {
+  width: 50%;
+}
+.icons-title {
+  width: 100%;
+  height: 100%;
+  font-size: 0.8rem;
+  display: grid;
+  align-content: center;
+  font-weight: bold;
+}
+header .header-btn {
+  padding: 0 12%;
+  border-radius: 1rem;
+  transition: 0.2s linear;
+}
+header .header-btn:hover {
+  background-color: #3b3b3b;
+}
+header .header-btn :active {
+  transform: scale(0.99);
+}

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMDB Clone</title>
+    <link rel="stylesheet" href="./fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./src/css/utility.css" />
+    <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/indexstyle.css" />
+    <link rel="stylesheet" href="./src/css/mediaQuery.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_circle"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="main-header-show">
+        <div class="left-logo">
+          <svg
+            id="home_img"
+            class="ipc-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="32"
+            viewBox="0 0 64 32"
+            version="1.1"
+          >
+            <g fill="#F5C518">
+              <rect x="0" y="0" width="100%" height="100%" rx="4"></rect>
+            </g>
+            <g
+              transform="translate(8.000000, 7.000000)"
+              fill="#000000"
+              fill-rule="nonzero"
+            >
+              <polygon points="0 18 5 18 5 0 0 0"></polygon>
+              <path
+                d="M15.6725178,0 L14.5534833,8.40846934 L13.8582008,3.83502426 C13.65661,2.37009263 13.4632474,1.09175121 13.278113,0 L7,0 L7,18 L11.2416347,18 L11.2580911,6.11380679 L13.0436094,18 L16.0633571,18 L17.7583653,5.8517865 L17.7707076,18 L22,18 L22,0 L15.6725178,0 Z"
+              ></path>
+              <path
+                d="M24,18 L24,0 L31.8045586,0 C33.5693522,0 35,1.41994415 35,3.17660424 L35,14.8233958 C35,16.5777858 33.5716617,18 31.8045586,18 L24,18 Z M29.8322479,3.2395236 C29.6339219,3.13233348 29.2545158,3.08072342 28.7026524,3.08072342 L28.7026524,14.8914865 C29.4312846,14.8914865 29.8796736,14.7604764 30.0478195,14.4865461 C30.2159654,14.2165858 30.3021941,13.486105 30.3021941,12.2871637 L30.3021941,5.3078959 C30.3021941,4.49404499 30.272014,3.97397442 30.2159654,3.74371416 C30.1599168,3.5134539 30.0348852,3.34671372 29.8322479,3.2395236 Z"
+              ></path>
+              <path
+                d="M44.4299079,4.50685823 L44.749518,4.50685823 C46.5447098,4.50685823 48,5.91267586 48,7.64486762 L48,14.8619906 C48,16.5950653 46.5451816,18 44.749518,18 L44.4299079,18 C43.3314617,18 42.3602746,17.4736618 41.7718697,16.6682739 L41.4838962,17.7687785 L37,17.7687785 L37,0 L41.7843263,0 L41.7843263,5.78053556 C42.4024982,5.01015739 43.3551514,4.50685823 44.4299079,4.50685823 Z M43.4055679,13.2842155 L43.4055679,9.01907814 C43.4055679,8.31433946 43.3603268,7.85185468 43.2660746,7.63896485 C43.1718224,7.42607505 42.7955881,7.2893916 42.5316822,7.2893916 C42.267776,7.2893916 41.8607934,7.40047379 41.7816216,7.58767002 L41.7816216,9.01907814 L41.7816216,13.4207851 L41.7816216,14.8074788 C41.8721037,15.0130276 42.2602358,15.1274059 42.5316822,15.1274059 C42.8031285,15.1274059 43.1982131,15.0166981 43.281155,14.8074788 C43.3640968,14.5982595 43.4055679,14.0880581 43.4055679,13.2842155 Z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="center-search-menu">
+          <div
+            class="center-menu-icon header-btn"
+            onclick="hide_Show('hiden-header')"
+          >
+            <label for="">
+              <i class="fa-solid fa-bars"></i>
+              <span class="icons-title">Menu</span>
+            </label>
+          </div>
+          <div class="search-input">
+            <div class="searchbox-options">
+              <div class="select" onclick="hide_Show('option-box')">
+                <span>All <i class="fa-solid fa-angle-down"></i> </span>
+              </div>
+              <div class="option-box hide">
+                <ul>
+                  <li class="activeOP">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20px"
+                      viewBox="0 -960 960 960"
+                      width="20px"
+                    >
+                      <path
+                        d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"
+                      />
+                    </svg>
+                    All
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20px"
+                      viewBox="0 -960 960 960"
+                      width="20px"
+                    >
+                      <path
+                        d="M192-144v-672h72v72h72v-72h288v72h72v-72h72v672h-72v-72h-72v72H336v-72h-72v72h-72Zm72-144h72v-80h-72v80Zm0-152h72v-80h-72v80Zm0-152h72v-80h-72v80Zm360 304h72v-80h-72v80Zm0-152h72v-80h-72v80Zm0-152h72v-80h-72v80ZM408-216h144v-528H408v528Zm0-528h144-144Z"
+                      />
+                    </svg>
+                    <span>Title</span>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20px"
+                      viewBox="0 -960 960 960"
+                      width="20px"
+                    >
+                      <path
+                        d="M336-144v-96H168q-29.7 0-50.85-21.16Q96-282.32 96-312.04v-432.24Q96-774 117.15-795T168-816h624q29.7 0 50.85 21.16Q864-773.68 864-743.96v432.24Q864-282 842.85-261T792-240H624v96H336ZM168-312h624v-432H168v432Zm0 0v-432 432Z"
+                      />
+                    </svg>
+                    <span>TV Episodes</span>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20px"
+                      viewBox="0 -960 960 960"
+                      width="20px"
+                    >
+                      <path
+                        d="M144-144v-528h144v-144h360v288h168v384H528v-144h-96v144H144Zm72-72h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm144 156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm144 300h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm168 456h72v-72h-72v72Zm0-156h72v-72h-72v72Z"
+                      />
+                    </svg>
+                    <span>Celebs</span>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20px"
+                      viewBox="0 -960 960 960"
+                      width="20px"
+                    >
+                      <path
+                        d="M144-144v-528h144v-144h360v288h168v384H528v-144h-96v144H144Zm72-72h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm144 156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm144 300h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm168 456h72v-72h-72v72Zm0-156h72v-72h-72v72Z"
+                      />
+                    </svg>
+                    <span>Companies</span>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20px"
+                      viewBox="0 -960 960 960"
+                      width="20px"
+                    >
+                      <path
+                        d="M168-192q-29.7 0-50.85-21.16Q96-234.32 96-264.04v-432.24Q96-726 117.15-747T168-768h420q16.85 0 31.92 7.5Q635-753 646-739l194 259-194 259q-11 14-26.08 21.5Q604.85-192 588-192H168Zm0-72h420l162-216-162-216H168v432Zm210-216Z"
+                      />
+                    </svg>
+                    <span>Keywords</span>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20px"
+                      viewBox="0 -960 960 960"
+                      width="20px"
+                    >
+                      <path
+                        d="m592-168 72 72H264q-29.7 0-50.85-21.15Q192-138.3 192-168v-624q0-29.7 21.15-50.85Q234.3-864 264-864h312l192 192v476q0 36-5.5 54T746-116L553-309q-15 10-34 14.5t-39 4.5q-60 0-102-42t-42-102q0-60 42-102t102-42q60 0 102 42t42 102q0 20-5 39.5T604-360l92 92v-374L546-792H264v624h328ZM480.21-362Q510-362 531-383.21t21-51Q552-464 530.79-485t-51-21Q450-506 429-484.79t-21 51Q408-404 429.21-383t51 21Zm-.21-82Zm0 0Z"
+                      />
+                    </svg>
+                    <span>Advanced Search</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20px"
+                      viewBox="0 -960 960 960"
+                      width="20px"
+                    >
+                      <path
+                        d="M522-480 333-669l51-51 240 240-240 240-51-51 189-189Z"
+                      />
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <input type="text" placeholder="Search IMDb" id="SearchInputBox"/>
+            <button class="search-button">
+              <i class="fa-solid fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="right-header-options">
+          <div class="watchlist">
+            <label for="wathclist" class="header-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="19px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                />
+              </svg>
+              <span>WatchList</span></label
+            >
+          </div>
+          <div class="singin">
+            <label for="sigin" class="header-btn"><span>Sigin</span></label>
+          </div>
+          <div class="uesapp">
+            <label for="uesapp" class="header-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="19px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                />
+              </svg>
+              <span id="uesapp">UesApp</span></label
+            >
+          </div>
+          <div class="language">
+            <label
+              for="lanu"
+              class="header-btn"
+              onclick="hide_Show('language-option-box')"
+            >
+              <span>EN</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20px"
+                viewBox="0 -960 960 960"
+                width="20px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="m480-355 162-162-51-51-111 111-111-111-51 51 162 162Zm0 259q-79 0-149-30t-122.5-82.5Q156-261 126-331T96-480q0-80 30-149.5t82.5-122Q261-804 331-834t149-30q80 0 149.5 30t122 82.5Q804-699 834-629.5T864-480q0 79-30 149t-82.5 122.5Q699-156 629.5-126T480-96Zm0-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Z"
+                />
+              </svg>
+            </label>
+            <div class="language-option-box hide">
+              <div class="supp-lan">
+                <h4>Fully Supported</h4>
+                <ul>
+                  <li>
+                    <label for="lang1">
+                      <input type="radio" name="language" id="lang1" />
+                      English (United States)</label
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="partially-lan">
+                <h4>
+                  Partially Supported
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#e8eaed"
+                  >
+                    <path
+                      d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                    />
+                  </svg>
+                </h4>
+                <ul>
+                  <li>
+                    <label for="lang2">
+                      <input type="radio" name="language" id="lang2" />
+                      Francais (Canada)</label
+                    >
+                  </li>
+                  <li>
+                    <label for="lang3">
+                      <input type="radio" name="language" id="lang3" />
+                      Francais (France)</label
+                    >
+                  </li>
+                  <li>
+                    <label for="lang4">
+                      <input type="radio" name="language" id="lang4" />
+                      Deutsch (Deutschland)</label
+                    >
+                  </li>
+                  <li>
+                    <label for="lang5">
+                      <input type="radio" name="language" id="lang5" />
+                      Hindi (India)</label
+                    >
+                  </li>
+                  <li>
+                    <label for="lang6">
+                      <input type="radio" name="language" id="lang6" />
+                      Italiano (Italia)</label
+                    >
+                  </li>
+                  <li>
+                    <label for="lang7">
+                      <input type="radio" name="language" id="lang7" />
+                      Portugues (Brasil)</label
+                    >
+                  </li>
+                  <li>
+                    <label for="lang8">
+                      <input type="radio" name="language" id="lang8" />
+                      Espanol (Espana)</label
+                    >
+                  </li>
+                  <li>
+                    <label for="lang9">
+                      <input type="radio" name="language" id="lang9" />
+                      Espanol (Mexico)</label
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hiden-header hide">
+        <div class="top">
+          <div class="logo">
+            <svg
+              id="home_img"
+              class="ipc-logo"
+              xmlns="http://www.w3.org/2000/svg"
+              width="80"
+              height="40"
+              viewBox="0 0 64 32"
+              version="1.1"
+            >
+              <g fill="#F5C518">
+                <rect x="0" y="0" width="100%" height="100%" rx="4"></rect>
+              </g>
+              <g
+                transform="translate(8.000000, 7.000000)"
+                fill="#000000"
+                fill-rule="nonzero"
+              >
+                <polygon points="0 18 5 18 5 0 0 0"></polygon>
+                <path
+                  d="M15.6725178,0 L14.5534833,8.40846934 L13.8582008,3.83502426 C13.65661,2.37009263 13.4632474,1.09175121 13.278113,0 L7,0 L7,18 L11.2416347,18 L11.2580911,6.11380679 L13.0436094,18 L16.0633571,18 L17.7583653,5.8517865 L17.7707076,18 L22,18 L22,0 L15.6725178,0 Z"
+                ></path>
+                <path
+                  d="M24,18 L24,0 L31.8045586,0 C33.5693522,0 35,1.41994415 35,3.17660424 L35,14.8233958 C35,16.5777858 33.5716617,18 31.8045586,18 L24,18 Z M29.8322479,3.2395236 C29.6339219,3.13233348 29.2545158,3.08072342 28.7026524,3.08072342 L28.7026524,14.8914865 C29.4312846,14.8914865 29.8796736,14.7604764 30.0478195,14.4865461 C30.2159654,14.2165858 30.3021941,13.486105 30.3021941,12.2871637 L30.3021941,5.3078959 C30.3021941,4.49404499 30.272014,3.97397442 30.2159654,3.74371416 C30.1599168,3.5134539 30.0348852,3.34671372 29.8322479,3.2395236 Z"
+                ></path>
+                <path
+                  d="M44.4299079,4.50685823 L44.749518,4.50685823 C46.5447098,4.50685823 48,5.91267586 48,7.64486762 L48,14.8619906 C48,16.5950653 46.5451816,18 44.749518,18 L44.4299079,18 C43.3314617,18 42.3602746,17.4736618 41.7718697,16.6682739 L41.4838962,17.7687785 L37,17.7687785 L37,0 L41.7843263,0 L41.7843263,5.78053556 C42.4024982,5.01015739 43.3551514,4.50685823 44.4299079,4.50685823 Z M43.4055679,13.2842155 L43.4055679,9.01907814 C43.4055679,8.31433946 43.3603268,7.85185468 43.2660746,7.63896485 C43.1718224,7.42607505 42.7955881,7.2893916 42.5316822,7.2893916 C42.267776,7.2893916 41.8607934,7.40047379 41.7816216,7.58767002 L41.7816216,9.01907814 L41.7816216,13.4207851 L41.7816216,14.8074788 C41.8721037,15.0130276 42.2602358,15.1274059 42.5316822,15.1274059 C42.8031285,15.1274059 43.1982131,15.0166981 43.281155,14.8074788 C43.3640968,14.5982595 43.4055679,14.0880581 43.4055679,13.2842155 Z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="cancel" onclick="hide_Show('hiden-header')">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="links">
+          <div class="links-top">
+            <div class="movies-links">
+              <h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#FFFF55"
+                >
+                  <path
+                    d="M160-120v-720h80v80h80v-80h320v80h80v-80h80v720h-80v-80h-80v80H320v-80h-80v80h-80Zm80-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm400 320h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80ZM400-200h160v-560H400v560Zm0-560h160-160Z"
+                  />
+                </svg>
+                Movies
+              </h1>
+              <ul>
+                <li><a href="">Release Calendar</a></li>
+                <li><a href="">Top 250 Movies</a></li>
+                <li><a href="">Most Popular Movies</a></li>
+                <li><a href="">Browse Movies by Genre</a></li>
+                <li><a href="">Top Box Office</a></li>
+                <li><a href="">Showtimers & Tickets</a></li>
+                <li><a href="">Movies News</a></li>
+                <li><a href="">India Movie Spotlight</a></li>
+              </ul>
+            </div>
+            <div class="tv-links">
+              <h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#FFFF55"
+                >
+                  <path
+                    d="M320-120v-80H160q-33 0-56.5-23.5T80-280v-480q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v480q0 33-23.5 56.5T800-200H640v80H320ZM160-280h640v-480H160v480Zm0 0v-480 480Z"
+                  />
+                </svg>
+                TV Shows
+              </h1>
+              <ul>
+                <li><a href="">Whats on TV & Streaming</a></li>
+                <li><a href="">Top 250 TV Shows</a></li>
+                <li><a href="">Most Popular TV Shows</a></li>
+                <li><a href="">Browse TV Shows by Ganre</a></li>
+                <li><a href="">Tv News</a></li>
+              </ul>
+              <div class="center-links">
+                <h1>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#FFFF55"
+                  >
+                    <path
+                      d="m460-380 280-180-280-180v360ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"
+                    />
+                  </svg>
+                  Watch
+                </h1>
+                <ul>
+                  <li><a href="">What is Watch</a></li>
+                  <li><a href="">Latest Trailers</a></li>
+                  <li><a href="">IMDb Originals</a></li>
+                  <li><a href="">IMDb Picks</a></li>
+                  <li><a href="">IMDb Spolight</a></li>
+                  <li><a href="">IMDb Podcasts</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="Awards-links">
+              <h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#FFFF55"
+                >
+                  <path
+                    d="M480-160q75 0 127.5-52.5T660-340q0-75-52.5-127.5T480-520q-75 0-127.5 52.5T300-340q0 75 52.5 127.5T480-160ZM363-572q20-11 42.5-17.5T451-598L350-800H250l113 228Zm234 0 114-228H610l-85 170 19 38q14 4 27 8.5t26 11.5ZM256-208q-17-29-26.5-62.5T220-340q0-36 9.5-69.5T256-472q-42 14-69 49.5T160-340q0 47 27 82.5t69 49.5Zm448 0q42-14 69-49.5t27-82.5q0-47-27-82.5T704-472q17 29 26.5 62.5T740-340q0 36-9.5 69.5T704-208ZM480-80q-40 0-76.5-11.5T336-123q-9 2-18 2.5t-19 .5q-91 0-155-64T80-339q0-87 58-149t143-69L120-880h280l80 160 80-160h280L680-559q85 8 142.5 70T880-340q0 92-64 156t-156 64q-9 0-18.5-.5T623-123q-31 20-67 31.5T480-80Zm0-260ZM363-572 250-800l113 228Zm234 0 114-228-114 228ZM406-230l28-91-74-53h91l29-96 29 96h91l-74 53 28 91-74-56-74 56Z"
+                  />
+                </svg>
+                Awards & Events
+              </h1>
+              <ul>
+                <li><a href="">Oscars</a></li>
+                <li><a href="">Black History Month</a></li>
+                <li><a href="">Sudance Film Festival</a></li>
+                <li><a href="">SXSW Film Festival</a></li>
+                <li><a href="">STARmeter Awards</a></li>
+                <li><a href="">Awards Central</a></li>
+                <li><a href="">Festival Central</a></li>
+                <li><a href="">All Events</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="links-bottom">
+            <div class="celebs-links">
+              <h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#FFFF55"
+                >
+                  <path
+                    d="M185-80q-17 0-29.5-12.5T143-122v-105q0-90 56-159t144-88q-40 28-62 70.5T259-312v190q0 11 3 22t10 20h-87Zm147 0q-17 0-29.5-12.5T290-122v-190q0-70 49.5-119T459-480h189q70 0 119 49t49 119v64q0 70-49 119T648-80H332Zm148-484q-66 0-112-46t-46-112q0-66 46-112t112-46q66 0 112 46t46 112q0 66-46 112t-112 46Z"
+                  />
+                </svg>
+                Celebs
+              </h1>
+              <ul>
+                <li><a href="">Born Today</a></li>
+                <li><a href="">Most Popular Celebs</a></li>
+                <li><a href="">Celebrity News</a></li>
+              </ul>
+            </div>
+            <div class="Community-links">
+              <h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#FFFF55"
+                >
+                  <path
+                    d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-82v-78q-33 0-56.5-23.5T360-320v-40L168-552q-3 18-5.5 36t-2.5 36q0 121 79.5 212T440-162Zm276-102q41-45 62.5-100.5T800-480q0-98-54.5-179T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h240q17 0 28.5 11.5T600-440v120h40q26 0 47 15.5t29 40.5Z"
+                  />
+                </svg>
+                Community
+              </h1>
+              <ul>
+                <li><a href="">Help Center</a></li>
+                <li><a href="">Contributor Zone</a></li>
+                <li><a href="">Polls</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+
+  <script src="./src/js/indexscript.js"></script>
+</html>

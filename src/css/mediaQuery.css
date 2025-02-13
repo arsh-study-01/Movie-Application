@@ -1,0 +1,60 @@
+@media screen and (max-width: 500px) {
+  header {
+    font-size: 0.75rem;
+  }
+  header .main-header-show {
+    grid-template-columns: 35% 30% 30%;
+  }
+  header .left-logo {
+    position: relative;
+    left: 35%;
+  }
+  header .center-menu-icon label {
+    position: absolute;
+    left: -160%;
+  }
+  header .center-menu-icon label i {
+    font-size: 1.2rem;
+  }
+  header .search-input {
+    grid-template-columns: auto;
+  }
+  header .search-input button {
+    background-color: transparent;
+    color: var(--white);
+    text-align: right;
+  }
+
+  header div.center-search-menu div.center-menu-icon label span.icons-title {
+    display: none;
+  }
+  header div.center-search-menu div.search-input input#SearchInputBox,
+  header div.center-search-menu div.search-input div.searchbox-options {
+    display: none !important;
+  }
+  header .right-header-options {
+    border: none;
+    grid-template-columns: 50% 50%;
+  }
+
+  header .right-header-options > div {
+    padding: 1%;
+    border-radius: 1rem;
+  }
+  header .right-header-options > div.uesapp {
+    color: var(--black);
+    background-color: var(--yellow) !important;
+  }
+  header .right-header-options > div.uesapp label {
+    background-color: transparent;
+  }
+  header .right-header-options > div:nth-child(1),
+  header .right-header-options > div:nth-child(4) {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 900px) {
+  header .right-header-options > div.uesapp {
+    display: none;
+  }
+}

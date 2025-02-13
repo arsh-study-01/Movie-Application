@@ -1,0 +1,272 @@
+header {
+  background-color: var(--headerBg);
+  width: 100%;
+  min-height: 3.3rem;
+  max-height: 4.4rem;
+  display: grid;
+  align-content: center;
+  font-weight: bolder;
+  padding: 0 4%;
+  /* padding-right: 2%; */
+}
+header .center-search-menu > div {
+  height: 100%;
+}
+
+header .main-header-show {
+  display: grid;
+  grid-template-columns: 8% 56% 30%;
+  gap: 2%;
+}
+header .left-logo {
+  width: 100%;
+  padding: 0.5% 1%;
+  display: grid;
+  align-content: center;
+}
+header .center-search-menu {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 3%;
+  grid-template-columns: 15% auto;
+}
+header .center-menu-icon label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  color: var(--white);
+}
+header .center-menu-icon .icons-title {
+  font-size: 0.95rem;
+  justify-content: center;
+}
+header .search-input {
+  display: grid;
+  grid-template-columns: 10% auto 8%;
+  height: 100%;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  align-content: center;
+}
+header .search-input i {
+  color: (--black);
+}
+header .search-input .select {
+  padding: 1%;
+  padding-left: 3%;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  border-right: 1px rgba(128, 128, 128, 0.521) solid;
+  position: relative;
+}
+header .option-box {
+  position: absolute;
+  color: var(--white);
+  margin-top: 0.5%;
+  width: 40%;
+  background-color: var(--headerBglight);
+}
+header .option-box ul li {
+  padding: 5%;
+  padding-left: 8%;
+  display: grid;
+  grid-template-columns: 20% auto 5%;
+  align-items: center;
+  color: var(--graytext);
+  cursor: pointer;
+}
+header .option-box ul li:last-child {
+  border-top: 1px solid var(--gray);
+}
+header .option-box ul li:hover {
+  background-color: var(--darkgray);
+}
+header .option-box ul li.activeOP {
+  --yello-icon: #f5e023ec;
+  color: var(--yello-icon);
+}
+header .option-box ul li i {
+  color: var(--grayicon);
+}
+header .option-box ul li svg {
+  fill: var(--yello-icon);
+}
+header .search-input input {
+  width: 100%;
+  height: 2.2rem;
+  padding: 0 2%;
+  border-right: 1px rgba(128, 128, 128, 0.521) solid;
+}
+header .search-input button {
+  color: var(--gray);
+  font-size: 1rem;
+  background-color: var(--white);
+}
+header .right-header-options {
+  display: grid;
+  gap: 2%;
+  grid-template-columns: 45% 30% 25%;
+  color: var(--white);
+  border-left: 2px solid var(--gray);
+  padding-left: 2%;
+  margin-left: 5%;
+}
+header .right-header-options > div label {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+header .right-header-options .watchlist {
+  width: 100%;
+}
+header .right-header-options > div > label {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+header .right-header-options svg {
+  position: relative;
+  top: -3%;
+}
+/* ==================================== Hiden Header=============================*/
+header .hiden-header {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--headerBg);
+  z-index: 1;
+  display: grid;
+  grid-template-rows: 13% auto;
+  padding: 3% 6%;
+  overflow: hidden;
+  font-weight: normal;
+}
+header .hiden-header h1 svg {
+  width: 35px;
+  height: auto;
+}
+header .hiden-header .Awards-links h1 svg {
+  width: 45px;
+}
+header .hiden-header h1 {
+  color: var(--white);
+  font-size: 1.5rem;
+  display: flex;
+  gap: 6%;
+  align-items: center;
+  text-wrap-mode: nowrap;
+}
+header .hiden-header li a {
+  color: var(--graytext);
+  text-decoration: none;
+  text-wrap-mode: nowrap;
+}
+header .hiden-header .top {
+  display: flex;
+  justify-content: space-between;
+}
+header .hiden-header .top * {
+  cursor: pointer;
+}
+header .hiden-header .cancel {
+  background-color: #ffff35;
+  border-radius: 50%;
+  width: 4.5%;
+  height: 50%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+header .hiden-header .links {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+header .hiden-header .links .links-top,
+header .hiden-header .links .links-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+header .hiden-header .links .links-bottom {
+  padding-right: 6%;
+}
+header .hiden-header ul li {
+  list-style: none;
+  padding: 4%;
+  padding-left: 25%;
+}
+header .hiden-header .links .links-top .Awards-links ul li {
+  padding-left: 21%;
+}
+header .hiden-header .links .links-bottom .celebs-links li {
+  padding-left: 29%;
+}
+header .hiden-header ul li:hover a {
+  text-decoration: underline;
+}
+header .hiden-header .center-links {
+  position: absolute;
+  top: 50%;
+  width: 20%;
+  height: 20%;
+  z-index: 2;
+}
+header div.language {
+  position: relative;
+}
+header .language-option-box {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 20vw;
+  border-radius: 0.4rem;
+  background-color: var(--darkgray);
+}
+header .language-option-box .supp-lan {
+  border-bottom: 1px solid var(--gray);
+}
+header .language-option-box h4 {
+  padding: 6% 10%;
+  font-weight: normal;
+  display: grid;
+  grid-template-columns: auto 10%;
+  border-bottom: 1px solid var(--gray);
+  text-transform: uppercase;
+  align-items: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+header .language-option-box li label {
+  padding: 7% 10%;
+  display: grid;
+  gap: 5%;
+  grid-template-columns: 10% auto;
+  text-wrap: nowrap;
+  font-weight: normal;
+  color: var(--graytext);
+}
+header .language-option-box li:hover {
+  background-color: #424141;
+  cursor: pointer;
+}
+.hide-options {
+  display: none;
+}
+.hide {
+  display: none !important;
+}
