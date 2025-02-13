@@ -18,3 +18,8 @@ Header_options.forEach((elm) => {
     document.querySelector(".option-box").classList.add("hide");
   });
 });
+let mobile_Header_btn = document.querySelector("header .search-input button");
+mobile_Header_btn.onclick = () => {
+  let searchBox = document.querySelector(".search-input");
+  searchBox.classList.toggle("mobile-header-search-box")
+};

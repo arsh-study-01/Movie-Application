@@ -47,11 +47,18 @@ header .center-menu-icon .icons-title {
 }
 header .search-input {
   display: grid;
-  grid-template-columns: 10% auto 8%;
+  grid-template-columns: auto 8%;
   height: 100%;
   border-radius: 0.3rem;
   overflow: hidden;
   align-content: center;
+}
+header div.search-input div.searchbox-outer {
+  display: grid;
+  grid-template-columns: 10% auto;
+}
+header div.search-input div.searchbox-outer div.input-cancel {
+  display: none;
 }
 header .search-input i {
   color: (--black);
@@ -124,7 +131,6 @@ header .right-header-options {
 }
 header .right-header-options > div label {
   display: flex;
-  justify-content: center;
   padding: 2%;
 }
 header .right-header-options .watchlist {
@@ -140,6 +146,44 @@ header .right-header-options > div > label {
 header .right-header-options svg {
   position: relative;
   top: -3%;
+}
+header div.language {
+  position: relative;
+}
+header .language-option-box {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 20vw;
+  border-radius: 0.4rem;
+  background-color: var(--darkgray);
+}
+header .language-option-box .supp-lan {
+  border-bottom: 1px solid var(--gray);
+}
+header .language-option-box h4 {
+  padding: 6% 10%;
+  font-weight: normal;
+  display: grid;
+  grid-template-columns: auto 10%;
+  border-bottom: 1px solid var(--gray);
+  text-transform: uppercase;
+  align-items: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+header .language-option-box li label {
+  padding: 7% 10%;
+  display: grid;
+  gap: 5%;
+  grid-template-columns: 10% auto;
+  text-wrap: nowrap;
+  font-weight: normal;
+  color: var(--graytext);
+}
+header .language-option-box li:hover {
+  background-color: #424141;
+  cursor: pointer;
 }
 /* ==================================== Hiden Header=============================*/
 header .hiden-header {
@@ -225,44 +269,6 @@ header .hiden-header .center-links {
   width: 20%;
   height: 20%;
   z-index: 2;
-}
-header div.language {
-  position: relative;
-}
-header .language-option-box {
-  position: absolute;
-  right: 0;
-  top: 100%;
-  width: 20vw;
-  border-radius: 0.4rem;
-  background-color: var(--darkgray);
-}
-header .language-option-box .supp-lan {
-  border-bottom: 1px solid var(--gray);
-}
-header .language-option-box h4 {
-  padding: 6% 10%;
-  font-weight: normal;
-  display: grid;
-  grid-template-columns: auto 10%;
-  border-bottom: 1px solid var(--gray);
-  text-transform: uppercase;
-  align-items: center;
-  font-size: 0.8rem;
-  letter-spacing: 0.05rem;
-}
-header .language-option-box li label {
-  padding: 7% 10%;
-  display: grid;
-  gap: 5%;
-  grid-template-columns: 10% auto;
-  text-wrap: nowrap;
-  font-weight: normal;
-  color: var(--graytext);
-}
-header .language-option-box li:hover {
-  background-color: #424141;
-  cursor: pointer;
 }
 .hide-options {
   display: none;

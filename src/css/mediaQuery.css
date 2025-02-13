@@ -1,17 +1,25 @@
 @media screen and (max-width: 600px) {
-  header {
+  header,
+  input,
+  input::placeholder {
     font-size: 0.75rem;
   }
+  header {
+    position: relative;
+  }
   header .main-header-show {
-    grid-template-columns: 35% 30% 30%;
+    grid-template-columns: 27% 38% 30%;
   }
   header .left-logo {
     position: relative;
     left: 35%;
   }
+  header .center-search-menu {
+    grid-template-columns: auto;
+  }
   header .center-menu-icon label {
     position: absolute;
-    left: -160%;
+    left: -120%;
   }
   header .center-menu-icon label i {
     font-size: 1.2rem;
@@ -28,9 +36,47 @@
   header div.center-search-menu div.center-menu-icon label span.icons-title {
     display: none;
   }
+  header div.mobile-header-search-box div.searchbox-outer {
+    position: absolute;
+    left: -88%;
+    top: -29%;
+    height: 100%;
+    width: 100vh;
+    height: 3.3rem;
+    background-color: var(--headerBg);
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+  }
+  header div.mobile-header-search-box input#SearchInputBox,
+  header div.mobile-header-search-box div.searchbox-options {
+    display: inline !important;
+  }
+  header div.mobile-header-search-box input#SearchInputBox,
+  header div.mobile-header-search-box div.searchbox-options div.select {
+    padding: 5% 0;
+    background-color: transparent;
+    color: var(--white);
+    border-right: 1px solid var(--white);
+  }
+  header div.mobile-header-search-box input#SearchInputBox {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--gray);
+    border-right: 1px solid var(--gray);
+    height: 100%;
+    padding-left: 3%;
+  }
+  header div.mobile-header-search-box div.input-cancel {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  header div.mobile-header-search-box div.input-cancel svg {
+    fill: var(--white);
+  }
   header div.center-search-menu div.search-input input#SearchInputBox,
   header div.center-search-menu div.search-input div.searchbox-options {
-    display: none !important;
+    display: none;
   }
   header .right-header-options {
     border: none;
@@ -52,9 +98,11 @@
   header .right-header-options > div:nth-child(4) {
     display: none !important;
   }
+  /* =========================Hiden Search Box===================== */
 }
 @media screen and (min-width: 900px) {
-  header .right-header-options > div.uesapp {
+  header .right-header-options > div.uesapp,
+  header div.mobile-hiden-header {
     display: none;
   }
 }

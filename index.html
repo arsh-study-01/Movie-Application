@@ -60,117 +60,139 @@
             </label>
           </div>
           <div class="search-input">
-            <div class="searchbox-options">
-              <div class="select" onclick="hide_Show('option-box')">
-                <span>All <i class="fa-solid fa-angle-down"></i> </span>
+            <div class="searchbox-outer">
+              <div class="searchbox-options">
+                <div class="select" onclick="hide_Show('option-box')">
+                  <span>All <i class="fa-solid fa-angle-down"></i> </span>
+                </div>
+                <div class="option-box hide">
+                  <ul>
+                    <li class="activeOP">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20px"
+                        viewBox="0 -960 960 960"
+                        width="20px"
+                      >
+                        <path
+                          d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"
+                        />
+                      </svg>
+                      All
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20px"
+                        viewBox="0 -960 960 960"
+                        width="20px"
+                      >
+                        <path
+                          d="M192-144v-672h72v72h72v-72h288v72h72v-72h72v672h-72v-72h-72v72H336v-72h-72v72h-72Zm72-144h72v-80h-72v80Zm0-152h72v-80h-72v80Zm0-152h72v-80h-72v80Zm360 304h72v-80h-72v80Zm0-152h72v-80h-72v80Zm0-152h72v-80h-72v80ZM408-216h144v-528H408v528Zm0-528h144-144Z"
+                        />
+                      </svg>
+                      <span>Title</span>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20px"
+                        viewBox="0 -960 960 960"
+                        width="20px"
+                      >
+                        <path
+                          d="M336-144v-96H168q-29.7 0-50.85-21.16Q96-282.32 96-312.04v-432.24Q96-774 117.15-795T168-816h624q29.7 0 50.85 21.16Q864-773.68 864-743.96v432.24Q864-282 842.85-261T792-240H624v96H336ZM168-312h624v-432H168v432Zm0 0v-432 432Z"
+                        />
+                      </svg>
+                      <span>TV Episodes</span>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20px"
+                        viewBox="0 -960 960 960"
+                        width="20px"
+                      >
+                        <path
+                          d="M144-144v-528h144v-144h360v288h168v384H528v-144h-96v144H144Zm72-72h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm144 156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm144 300h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm168 456h72v-72h-72v72Zm0-156h72v-72h-72v72Z"
+                        />
+                      </svg>
+                      <span>Celebs</span>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20px"
+                        viewBox="0 -960 960 960"
+                        width="20px"
+                      >
+                        <path
+                          d="M144-144v-528h144v-144h360v288h168v384H528v-144h-96v144H144Zm72-72h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm144 156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm144 300h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm168 456h72v-72h-72v72Zm0-156h72v-72h-72v72Z"
+                        />
+                      </svg>
+                      <span>Companies</span>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20px"
+                        viewBox="0 -960 960 960"
+                        width="20px"
+                      >
+                        <path
+                          d="M168-192q-29.7 0-50.85-21.16Q96-234.32 96-264.04v-432.24Q96-726 117.15-747T168-768h420q16.85 0 31.92 7.5Q635-753 646-739l194 259-194 259q-11 14-26.08 21.5Q604.85-192 588-192H168Zm0-72h420l162-216-162-216H168v432Zm210-216Z"
+                        />
+                      </svg>
+                      <span>Keywords</span>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20px"
+                        viewBox="0 -960 960 960"
+                        width="20px"
+                      >
+                        <path
+                          d="m592-168 72 72H264q-29.7 0-50.85-21.15Q192-138.3 192-168v-624q0-29.7 21.15-50.85Q234.3-864 264-864h312l192 192v476q0 36-5.5 54T746-116L553-309q-15 10-34 14.5t-39 4.5q-60 0-102-42t-42-102q0-60 42-102t102-42q60 0 102 42t42 102q0 20-5 39.5T604-360l92 92v-374L546-792H264v624h328ZM480.21-362Q510-362 531-383.21t21-51Q552-464 530.79-485t-51-21Q450-506 429-484.79t-21 51Q408-404 429.21-383t51 21Zm-.21-82Zm0 0Z"
+                        />
+                      </svg>
+                      <span>Advanced Search</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20px"
+                        viewBox="0 -960 960 960"
+                        width="20px"
+                      >
+                        <path
+                          d="M522-480 333-669l51-51 240 240-240 240-51-51 189-189Z"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="option-box hide">
-                <ul>
-                  <li class="activeOP">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="20px"
-                      viewBox="0 -960 960 960"
-                      width="20px"
-                    >
-                      <path
-                        d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"
-                      />
-                    </svg>
-                    All
-                  </li>
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="20px"
-                      viewBox="0 -960 960 960"
-                      width="20px"
-                    >
-                      <path
-                        d="M192-144v-672h72v72h72v-72h288v72h72v-72h72v672h-72v-72h-72v72H336v-72h-72v72h-72Zm72-144h72v-80h-72v80Zm0-152h72v-80h-72v80Zm0-152h72v-80h-72v80Zm360 304h72v-80h-72v80Zm0-152h72v-80h-72v80Zm0-152h72v-80h-72v80ZM408-216h144v-528H408v528Zm0-528h144-144Z"
-                      />
-                    </svg>
-                    <span>Title</span>
-                  </li>
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="20px"
-                      viewBox="0 -960 960 960"
-                      width="20px"
-                    >
-                      <path
-                        d="M336-144v-96H168q-29.7 0-50.85-21.16Q96-282.32 96-312.04v-432.24Q96-774 117.15-795T168-816h624q29.7 0 50.85 21.16Q864-773.68 864-743.96v432.24Q864-282 842.85-261T792-240H624v96H336ZM168-312h624v-432H168v432Zm0 0v-432 432Z"
-                      />
-                    </svg>
-                    <span>TV Episodes</span>
-                  </li>
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="20px"
-                      viewBox="0 -960 960 960"
-                      width="20px"
-                    >
-                      <path
-                        d="M144-144v-528h144v-144h360v288h168v384H528v-144h-96v144H144Zm72-72h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm144 156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm144 300h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm168 456h72v-72h-72v72Zm0-156h72v-72h-72v72Z"
-                      />
-                    </svg>
-                    <span>Celebs</span>
-                  </li>
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="20px"
-                      viewBox="0 -960 960 960"
-                      width="20px"
-                    >
-                      <path
-                        d="M144-144v-528h144v-144h360v288h168v384H528v-144h-96v144H144Zm72-72h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm144 156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm144 300h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm168 456h72v-72h-72v72Zm0-156h72v-72h-72v72Z"
-                      />
-                    </svg>
-                    <span>Companies</span>
-                  </li>
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="20px"
-                      viewBox="0 -960 960 960"
-                      width="20px"
-                    >
-                      <path
-                        d="M168-192q-29.7 0-50.85-21.16Q96-234.32 96-264.04v-432.24Q96-726 117.15-747T168-768h420q16.85 0 31.92 7.5Q635-753 646-739l194 259-194 259q-11 14-26.08 21.5Q604.85-192 588-192H168Zm0-72h420l162-216-162-216H168v432Zm210-216Z"
-                      />
-                    </svg>
-                    <span>Keywords</span>
-                  </li>
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="20px"
-                      viewBox="0 -960 960 960"
-                      width="20px"
-                    >
-                      <path
-                        d="m592-168 72 72H264q-29.7 0-50.85-21.15Q192-138.3 192-168v-624q0-29.7 21.15-50.85Q234.3-864 264-864h312l192 192v476q0 36-5.5 54T746-116L553-309q-15 10-34 14.5t-39 4.5q-60 0-102-42t-42-102q0-60 42-102t102-42q60 0 102 42t42 102q0 20-5 39.5T604-360l92 92v-374L546-792H264v624h328ZM480.21-362Q510-362 531-383.21t21-51Q552-464 530.79-485t-51-21Q450-506 429-484.79t-21 51Q408-404 429.21-383t51 21Zm-.21-82Zm0 0Z"
-                      />
-                    </svg>
-                    <span>Advanced Search</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="20px"
-                      viewBox="0 -960 960 960"
-                      width="20px"
-                    >
-                      <path
-                        d="M522-480 333-669l51-51 240 240-240 240-51-51 189-189Z"
-                      />
-                    </svg>
-                  </li>
-                </ul>
+              <input
+                type="text"
+                placeholder="Search IMDb"
+                id="SearchInputBox"
+              />
+              <div
+                class="input-cancel"
+                onclick="document.querySelector('.mobile-header-search-box').classList.remove('mobile-header-search-box')"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#000000"
+                >
+                  <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                  />
+                </svg>
               </div>
             </div>
-            <input type="text" placeholder="Search IMDb" id="SearchInputBox"/>
             <button class="search-button">
               <i class="fa-solid fa-search"></i>
             </button>
@@ -198,17 +220,6 @@
           </div>
           <div class="uesapp">
             <label for="uesapp" class="header-btn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="19px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#e8eaed"
-              >
-                <path
-                  d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-                />
-              </svg>
               <span id="uesapp">UesApp</span></label
             >
           </div>
@@ -508,6 +519,7 @@
           </div>
         </div>
       </div>
+      <div class="mobile-hiden-header"></div>
     </header>
   </body>
 
