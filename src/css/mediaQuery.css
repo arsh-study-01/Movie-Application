@@ -61,10 +61,9 @@
   header div.mobile-header-search-box input#SearchInputBox {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid var(--gray);
-    border-right: 1px solid var(--gray);
     height: 100%;
     padding-left: 3%;
+    font-size: 1rem;
   }
   header div.mobile-header-search-box div.input-cancel {
     display: flex !important;
@@ -97,6 +96,61 @@
   header .right-header-options > div:nth-child(1),
   header .right-header-options > div:nth-child(4) {
     display: none !important;
+  }
+  /* ========================================================================= */
+  header div.hiden-header {
+    width: 70%;
+    height: 100vh;
+    background-color: var(--headerBglight);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3%;
+    display: grid;
+    grid-template-rows: 10% auto;
+  }
+  header .hiden-header .links {
+    display: block;
+  }
+  header .hiden-header .center-links {
+    position: relative;
+    top: auto;
+    height: 100%;
+    width: 100%;
+  }
+  header .hiden-header .links .links-top,
+  header .hiden-header .links .links-bottom {
+    flex-direction: column;
+  }
+  header .hiden-header .links .links-bottom {
+    padding: 0;
+  }
+  header div.hiden-header > div > div h1 {
+    width: 100%;
+    font-size: 1rem;
+    grid-template-columns: 10% auto 10%;
+    display: grid;
+    padding: 4%;
+  }
+  header div.hiden-header h1 svg {
+    width: 100% !important;
+    fill: var(--gray);
+  }
+  header div.hiden-header > div > div ul {
+    display: none;
+  }
+  header div.mobile-hiden-header-options ul {
+    display: block !important;
+  }
+  header .hiden-header li:hover {
+    background-color: var(--darkgray);
+  }
+  header .hiden-header .links .links-bottom .celebs-links li {
+    padding-left: 20%;
+  }
+  header .hiden-header .cancel {
+    width: 15%;
+    height: 45%;
   }
   /* =========================Hiden Search Box===================== */
 }
