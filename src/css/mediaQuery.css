@@ -6,6 +6,7 @@
   }
   header {
     position: relative;
+    height: 4rem;
   }
   header .main-header-show {
     grid-template-columns: 27% 38% 30%;
@@ -141,6 +142,7 @@
   }
   header div.mobile-hiden-header-options ul {
     display: block !important;
+    font-size: 1rem;
   }
   header .hiden-header li:hover {
     background-color: var(--darkgray);

@@ -1,0 +1,183 @@
+/* ==================Hero section============================ */
+main {
+  padding: 2% 6%;
+}
+main div.hearo-section-container {
+  height: 65vh;
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+main div.hearo-section-container div.trailer-show {
+  position: relative;
+  margin-right: 4%;
+  border-radius: 0.6rem;
+  /* border: 1px solid white; */
+  overflow: hidden;
+}
+main div.hearo-section-container div.trailer-show div.outer-container {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+div.main-tariler-img {
+  width: 54.5vw;
+  position: relative;
+}
+div.main-tariler-img img.main-thamnel {
+  aspect-ratio: 2/1;
+  width: 54.5vw;
+  height: 50vh;
+  /* object-fit: cover; */
+  z-index: -1;
+}
+main div.hearo-section-container div.trailer-show div.info {
+  display: none;
+  width: 100%;
+  height: 40%;
+  color: var(--white);
+  background-image: var(--trailer-botton-shadow);
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 22% auto;
+  padding-bottom: 3%;
+  padding-left: 2%;
+}
+main div.hearo-section-container div.trailer-show div.info div.thamneal img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+div.info div.thamneal div.save-icon {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+main div.hearo-section-container div.trailer-show div.info div.right-box {
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+div.video-play-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.video-play-icon svg {
+  transform: scale(3);
+}
+div.title-container {
+  display: grid;
+  margin-top: 13%;
+}
+
+div.title-container div.tariler-duration-box {
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.title-container div.feedback-box {
+  display: flex;
+  justify-content: start;
+  gap: 5%;
+}
+div.title-container div.feedback-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  font-size: 0.7rem;
+}
+div.feedback-box div.sub-title,
+div.main-title {
+  font-size: 1rem;
+}
+div.title-container div.feedback-box div svg {
+  width: 40%;
+}
+
+main div.hearo-section-container div.trailer-arrow-btn {
+  position: absolute;
+  padding: 2%;
+  border: 1px solid var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000001e;
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+  top: 30%;
+}
+main div.hearo-section-container div.left {
+  left: 0.5%;
+}
+main div.hearo-section-container div.right {
+  right: 0.5%;
+}
+/* =========================================================================================================== */
+main div.upcoming-detail-container {
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  color: var(--graytext);
+}
+.upcoming-detail-container > div.top h1 {
+  font-size: 1.2rem;
+  color: var(--yellow);
+}
+main div.next-previwe {
+  background-image: linear-gradient(
+    var(--headerBg),
+    var(--headerBglight),
+    transparent
+  );
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+div.next-previwe div.previwe-container {
+  display: grid;
+  grid-template-columns: 20% auto;
+  align-content: center;
+  gap: 5%;
+  padding: 2%;
+}
+div.next-previwe div.previwe-container div.thamnel img {
+  width: 100%;
+  border-radius: 1rem;
+}
+div.previwe-info {
+  display: flex;
+  flex-direction: column;
+}
+div.previwe-info h1 {
+  font-size: 01rem;
+}
+div.previwe-info div.bottom {
+  display: flex;
+  align-items: center;
+}
+div.previwe-info div.bottom span {
+  font-size: 0.8rem;
+}
+div.previwe-info div.bottom > div {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+div.previwe-info div.bottom svg {
+  width: 35%;
+}
+button.browes-trailer {
+  background-color: transparent;
+  color: var(--white);
+  width: 45%;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+button.browes-trailer:hover {
+  text-decoration: underline;
+  text-underline-offset: 15%;
+}

@@ -1,22 +1,19 @@
 function hide_Show(cls) {
   let elm = document.querySelector(`.${cls}`);
   elm.classList.toggle("hide");
-  console.log(Array(elm.classList));
-  console.log(Array(elm.classList).indexOf("hide"));
-
   if (Array(elm.classList).indexOf("hide") != -1) {
     console.log("arshnoor");
   }
 }
-document.querySelector(".hiden-header").addEventListener("click", (elm) => {
-  addEventListener("click", (e) => {
-    if (e.target.offsetParent == elm.currentTarget) {
-      if (elm.target.offsetParent) {
-        elm.target.offsetParent.classList.toggle("hide");
-      }
-    }
-  });
-});
+// document.querySelector(".hiden-header").addEventListener("click", (elm) => {
+//   addEventListener("click", (e) => {
+//     if (e.target.offsetParent == elm.currentTarget) {
+//       if (elm.target.offsetParent) {
+//         elm.target.offsetParent.classList.toggle("hide");
+//        }
+//     }
+//   });
+// });
 // ==============================================================================
 
 let Header_options = document.querySelectorAll(".option-box > ul >li");
@@ -43,3 +40,30 @@ mobile_menu_options.addEventListener("click", (e) => {
     e.target.parentElement.classList.toggle("mobile-hiden-header-options");
   }
 });
+// ================================================================================
+let val = 0;
+let Image = (x) => {
+  document.querySelector(".outer-container").style.left = `-${val}%`;
+  if (val == x * 100) {
+    val = 0;
+  } else {
+    val += 100;
+  }
+  console.log(val);
+  setTimeout(Image, 1000);
+};
+function hearo_image_gallry() {
+  let x = document.querySelectorAll(".main-tariler-img").length;
+  let Image = () => {
+    document.querySelector(".outer-container").style.left = `-${val}vw`;
+    if (val == (x - 1) * 54.5) {
+      val = 0;
+    } else {
+      val += 54.5;
+    }
+    console.log(val);
+    setTimeout(Image, (x / 2) * 1000);
+  };
+  Image();
+}
+// hearo_image_gallry();

@@ -19,6 +19,14 @@
   --yello-icon: #999999;
   --darkgray: #2e2d2d;
   --yellow: yellow;
+  --hero-image-length: 4;
+  --trailer-botton-shadow: linear-gradient(
+    transparent,
+    #000000f5,
+    #000000de,
+    #000000,
+    #000000
+  );
 }
 body,
 header,
@@ -99,4 +107,8 @@ header .header-btn:hover {
 }
 header .header-btn :active {
   transform: scale(0.99);
+}
+svg:hover {
+  fill: var(--yellow);
+  cursor: pointer;
 }
