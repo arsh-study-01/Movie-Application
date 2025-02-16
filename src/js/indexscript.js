@@ -72,4 +72,4 @@ function hearo_image_gallry() {
   };
   Image();
 }
-// hearo_image_gallry();
+hearo_image_gallry();
