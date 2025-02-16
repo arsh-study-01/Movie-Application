@@ -19,7 +19,7 @@
   --yello-icon: #999999;
   --darkgray: #2e2d2d;
   --yellow: yellow;
-  --hero-image-length: 4;
+  --hero-image-left: 99.8;
   --trailer-botton-shadow: linear-gradient(
     transparent,
     #000000f5,
@@ -27,6 +27,12 @@
     #000000,
     #000000
   );
+}
+::-webkit-scrollbar,
+::-webkit-scroll-width,
+::-webkit-scrollbar-corner {
+  width: 1px;
+  opacity: 0;
 }
 body,
 header,
@@ -61,6 +67,14 @@ body {
   max-height: 100vh;
   background-color: black;
   position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
 }
 button {
   border: none;
@@ -111,4 +125,5 @@ header .header-btn :active {
 svg:hover {
   fill: var(--yellow);
   cursor: pointer;
+  transform: scale(1.1);
 }

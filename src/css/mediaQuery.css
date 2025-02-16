@@ -1,4 +1,7 @@
 @media screen and (max-width: 600px) {
+  :root {
+    --hero-image-left: 100;
+  }
   header,
   input,
   input::placeholder {
@@ -33,7 +36,6 @@
     color: var(--white);
     text-align: right;
   }
-
   header div.center-search-menu div.center-menu-icon label span.icons-title {
     display: none;
   }
@@ -82,7 +84,6 @@
     border: none;
     grid-template-columns: 50% 50%;
   }
-
   header .right-header-options > div {
     padding: 1%;
     border-radius: 1rem;
@@ -154,7 +155,85 @@
     width: 15%;
     height: 45%;
   }
-  /* =========================Hiden Search Box===================== */
+  /* ========================================================================= */
+  main {
+    padding: 2%;
+  }
+  div.featured-container > h1 {
+    font-size: 1.5rem;
+  }
+  main div.hearo-section-container {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+  }
+  main div.upcoming-detail-container div.top,
+  main div.upcoming-detail-container div.next-previwe {
+    display: none;
+  }
+  main div.upcoming-detail-container {
+    height: 10%;
+    grid-template-rows: auto;
+    gap: 1%;
+  }
+  div.main-tariler-img {
+    width: auto;
+  }
+  div.main-tariler-img img.main-thamnel {
+    width: 95.5vw;
+    height: 100%;
+  }
+  main div.hearo-section-container div.trailer-show {
+    margin: 0;
+    height: 100%;
+  }
+  main div.hearo-section-container div.trailer-show div.info div.right-box {
+    grid-template-rows: 30% auto;
+    grid-template-columns: auto;
+    gap: 5%;
+  }
+  div.trailer-show div.info {
+    height: 45%;
+  }
+  div.trailer-show div.info div.thamneal img {
+    height: 100%;
+    object-fit: cover;
+  }
+  div.video-play-icon {
+    width: 20%;
+  }
+  div.video-play-icon svg {
+    transform: scale(2);
+  }
+  div.title-container {
+    margin: 0;
+    margin-left: 5%;
+  }
+  div.info div.right-box h2 {
+    font-size: 1.1rem;
+  }
+  div.info div.right-box h3 {
+    font-size: 0.9rem;
+  }
+  div.featured-container div.slider-container div.outer-box {
+    grid-template-columns: repeat(3, 90%);
+    overflow-y: hidden;
+  }
+  /* ========================================================================= */
+  div.celebrities-container div.outer-container {
+    grid-template-columns: repeat(6, 45%);
+  }
+  main div.popular-section-conatiner {
+    grid-template-rows: 18% auto;
+    gap: 4%;
+  }
+  main div.popular-section-conatiner div.title h1 {
+    font-size: 1.5rem;
+    padding-left: 3%;
+  }
+  main div.popular-section-conatiner div.title div.option {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 900px) {
   header .right-header-options > div.uesapp,

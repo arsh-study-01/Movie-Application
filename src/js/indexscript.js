@@ -41,28 +41,34 @@ mobile_menu_options.addEventListener("click", (e) => {
   }
 });
 // ================================================================================
-let val = 0;
-let Image = (x) => {
-  document.querySelector(".outer-container").style.left = `-${val}%`;
-  if (val == x * 100) {
-    val = 0;
-  } else {
-    val += 100;
-  }
-  console.log(val);
-  setTimeout(Image, 1000);
-};
+var style = window.getComputedStyle(document.body);
+style = parseInt(style.getPropertyValue("--hero-image-left"));
+// style = 54.5;
 function hearo_image_gallry() {
+  let trailer_val = 0;
+  let preview_val = 0;
   let x = document.querySelectorAll(".main-tariler-img").length;
+  let previwe_length = document.querySelectorAll(".previwe-container").length;
+  let trailer_box = document.querySelector(".outer-container");
+  let tariler_previwe = document.querySelector("div.next-previwe div.box ");
+  tariler_previwe.style.gridTemplateRows = `repeat(${previwe_length},33%)`;
+
+  document.querySelector(".left").addEventListener("click", () => {
+    if (trailer_val != 0) trailer_val -= style * 2;
+    if (preview_val != 0) preview_val -= 32 * 2;
+  });
+  document.querySelector(".right").addEventListener("click", () => {
+    if (trailer_val != x * style) trailer_val += style;
+    if (preview_val != 0) preview_val += 32;
+  });
   let Image = () => {
-    document.querySelector(".outer-container").style.left = `-${val}vw`;
-    if (val == (x - 1) * 54.5) {
-      val = 0;
-    } else {
-      val += 54.5;
-    }
-    console.log(val);
-    setTimeout(Image, (x / 2) * 1000);
+    trailer_box.style.left = `-${trailer_val}%`;
+    tariler_previwe.style.top = `-${preview_val}%`;
+    trailer_val += style;
+    preview_val += 32;
+    if (trailer_val == x * style) trailer_val = 0;
+    if (preview_val == (previwe_length - 2) * 32) preview_val = 0;
+    let time = setTimeout(Image, (x / 4) * 1000);
   };
   Image();
 }
