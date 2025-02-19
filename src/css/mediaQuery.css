@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px) {
   :root {
-    --hero-image-left: 100;
+    --hero-image-left: 96;
   }
   header,
   input,

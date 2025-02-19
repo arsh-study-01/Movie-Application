@@ -1,8 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      img {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://m.media-amazon.com/images/M/MV5BZmM1MGM0MDQtZTAzNy00ZGJkLWI4MDUtNjBmMzdhYjhlM2QwXkEyXkFqcGc@._V1_.jpg"
+      alt=""
+    />
+    <img
+      src="https://m.media-amazon.com/images/M/MV5BMmY5MWM3ODMtZWJhMC00YzU4LWI1ZWMtYjk1OThmYjQ1M2RlXkEyXkFqcGc@._V1_CR693,242,357,536_.jpg"
+      alt=""
+    />
+    <video
+      src="https://imdb-video.media-imdb.com/vi238012697/hls-1737992645801-master.m3u8?Expires=1740055041&Signature=nUEe7pINCOO0ruBCkIW88z0crAfkPw4cQdvjf5wt26ym1KHALCjFB1w1CV1SujrDJjeW6aCY0zNFQvaB8Lo8SoIwCCXhYdFcREsNFy5PRzp03~-TDCXPDR8WYc18S4AJZH-GTg7OtFyOfB269ZUUCNgLz-LiwWWUXafPIQOI2uTxlvV8k4TQzlXvCV9DKuAmm3puJx2q28GEmsu97VT37RDJeuIU6yG5PvQOSKCgpj7z4~8KLxAjLoE2C8mVdUOnyGOvQwFs46RWd8492NoLjcz~GBhRdV6fu0aVZKTbojdv6HKpHu~KN97Y8Yy~nVmyYYz-7ej4KP3KrJ-fWfPu-w__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+      controls
+    ></video>
+    <img
+      src="https://m.media-amazon.com/images/M/MV5BODI2M2Q3ZmYtZjk2Yy00NGU2LTk1MWMtNjNhOWMxNzczYzhjXkEyXkFqcGdeQXNvbG5vbXM@._V1_.jpg"
+      alt=""
+    />
+  </body>
+  <script>
+    function myFunction() {
+      // Get the text field
+      var copyText = document.getElementById("myInput");
 
-<div class="main-tariler-img">
-  <img
-    src="./src/img/tham/tham (1).png"
-    alt=""
-    class="main-thamnel"
-  />
-</div>
+      // Select the text field
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); // For mobile devices
+
+      // Copy the text inside the text field
+      navigator.clipboard.writeText(copyText.value);
+    }
+    const url =
+      "https://imdb8.p.rapidapi.com/title/get-images?tconst=tt11280740&limit=25";
+    const options = {
+      method: "GET",
+      headers: {
+        "x-rapidapi-key": "6630956242msh033c4ece231b4f9p11e67djsn46f7d3cbea8e",
+        "x-rapidapi-host": "imdb8.p.rapidapi.com",
+      },
+    };
+    try {
+      async function API(params) {
+        const response = await fetch(url, options);
+        const result = await response.text();
+        document.getElementById("myInput").value = result;
+        console.log(result);
+      }
+      API();
+    } catch (error) {
+      console.error(error);
+    }
+  </script>
+</html>
