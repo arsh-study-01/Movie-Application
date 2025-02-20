@@ -1,14 +1,14 @@
-import { API } from "./API/config/utility.js";
+import { trendingData, topActors } from "./API/config/utility.js";
 
 // ======================================================================================
 let x = window.getComputedStyle(document.body);
-x = parseFloat(x.getPropertyValue("--hero-image-left"));
+let hero_image_left = parseFloat(x.getPropertyValue("--hero-image-left"));
+let top_celebrty = parseFloat(x.getPropertyValue("--top-celebrty"));
 async function Trending() {
-  let Url = "./src/JSON/IMDB/toptrendingtrailer.json";
   try {
+    // data = trendingData;
     let Length_of_Elm = 0;
-    let data = await API({ URL: Url });
-    let result = data.data.topTrendingTitles.edges;
+    let result = trendingData;
     result.forEach((element) => {
       let data = element.node.item.latestTrailer;
       if (data) {
@@ -147,12 +147,47 @@ async function Trending() {
         Length_of_Elm++;
       }
     });
-    console.log(Length_of_Elm);
 
     trendingAnimation(Length_of_Elm);
+    topWeek();
   } catch (error) {
     console.log(error);
   }
+}
+async function top_actores() {
+  let elm = document.querySelector(
+    "div.celebrities-container > div.outer-container"
+  );
+
+  elm.style.gridTemplateColumns = `repeat(${topActors.length}, ${top_celebrty}%)`;
+  topActors.forEach((element) => {
+    let z = `<div class="celebrities-box">
+             <div class="img">
+              <img
+                src="${element.node.primaryImage.url}"
+                alt=""
+              />
+              </div>
+              <div class="info">
+                <div class="rank">
+                  <span>${element.node.meterRanking.currentRank}</span>(
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#e8eaed"
+                    class="${element.node.meterRanking.rankChange.changeDirection}"
+                  >
+                    <path d="m280-400 200-200 200 200H280Z" />
+                  </svg>
+                  <span>${element.node.meterRanking.rankChange.difference}</span>)
+                </div>
+                <div class="name">${element.node.nameText.text}</div>
+              </div>
+            </div>`;
+    elm.innerHTML += z;
+  });
 }
 function trendingAnimation(trendingLength = 20) {
   let leftValue = 0;
@@ -166,22 +201,126 @@ function trendingAnimation(trendingLength = 20) {
     // add style value
     trending_Trilar.style.left = `-${leftValue}%`;
     previwe_box.style.top = `-${topValue}%`;
-    trending_Trilar.style.gridTemplateColumns = `repeat(${trendingLength},${x}%)`;
+    trending_Trilar.style.gridTemplateColumns = `repeat(${trendingLength},${hero_image_left}%)`;
     previwe_box.style.gridTemplateRows = `repeat(${trendingLength},33%)`;
     //   changing Positon Value
-    leftValue = leftValue + 100;
+    leftValue = leftValue + 100.2;
     topValue = topValue + 33;
     //   Fix leftValue variable Value
     leftValue = parseFloat(leftValue.toFixed(1));
     //   Defult Value Conditions
-    if (leftValue == (trendingLength - 1) * 100) leftValue = 0;
+
+    if (leftValue == parseFloat((trendingLength - 1) * 100.2).toFixed(2))
+      leftValue = 0;
     if (topValue == (trendingLength - 2) * 33) topValue = 0;
     //   Repeting Call Funtion
-    setTimeout(() => {
-      Repeating();
-    }, 1500);
+    // setTimeout(() => {
+    //   Repeating();
+    // }, 1500);
   }
   Repeating();
 }
-// export { trendingAnimation };
+async function topWeek() {
+  console.log(trendingData);
+  let Reval = 10;
+  let elm = document.querySelector("div.Topweekbox");
+  for (let i = 0; i < Reval; i++) {
+    if (trendingData[i].node.item.latestTrailer) {
+      console.log(trendingData[i], i);
+      let thambnail =
+        trendingData[i].node.item.latestTrailer.primaryTitle.primaryImage.url;
+      let Rating =
+        trendingData[i].node.item.latestTrailer.primaryTitle.ratingsSummary
+          .aggregateRating;
+      let Title =
+        trendingData[i].node.item.latestTrailer.primaryTitle.titleText.text;
+      console.log(elm);
+      elm.innerHTML += `  <div class="top-box">
+              <div class="image-box">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#e8eaed"
+                  >
+                    <path
+                      d="M200-120v-640q0-33 23.5-56.5T280-840h240v80H280v518l200-86 200 86v-278h80v400L480-240 200-120Zm80-640h240-240Zm400 160v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z"
+                    />
+                  </svg>
+                </div>
+                <img src="${thambnail}" alt="" />
+              </div>
+              <div class="info">
+                <div class="rating">
+                  <div class="left">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="m606-286-33-144 111-96-146-13-58-136v312l126 77ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                      />
+                    </svg>
+                    <span>${Rating}</span>
+                  </div>
+                  <div class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4><span>${i + 1}. </span>${Title}</h4>
+                </div>
+                <div class="addbtn">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M440-120v-320H120v-80h320v-320h80v320h320v80H520v320h-80Z"
+                      />
+                    </svg>
+                    WatchList
+                  </button>
+                </div>
+                <div class="trailerbtn">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path d="M400-280v-400l200 200-200 200Z" />
+                    </svg>
+                    Trailer
+                  </button>
+                </div>
+              </div>
+            </div>`;
+    } else {
+      Reval++;
+    }
+  }
+}
 Trending();
+top_actores();

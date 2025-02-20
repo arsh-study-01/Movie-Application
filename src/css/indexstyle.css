@@ -1,5 +1,6 @@
 /* ==================Hero section============================ */
 main {
+  color: var(--white);
   padding: 2% 6%;
 }
 main div.hearo-section-container {
@@ -11,7 +12,7 @@ main div.hearo-section-container div.trailer-show {
   position: relative;
   margin-right: 4%;
   border-radius: 0.6rem;
-  /* border: 2px solid red; */
+
   overflow: hidden;
 }
 main div.hearo-section-container div.trailer-show div.outer-container {
@@ -22,12 +23,12 @@ main div.hearo-section-container div.trailer-show div.outer-container {
   /* grid-template-columns: repeat(20, 95.3%); */
 }
 div.main-tariler-img {
-  width: 54.5vw;
+  width: 54.4vw;
   position: relative;
 }
 div.main-tariler-img img.main-thamnel {
   aspect-ratio: 2/1;
-  width: 54.5vw;
+  width: 100%;
   height: 50vh;
   /* object-fit: cover; */
   z-index: -1;
@@ -59,6 +60,7 @@ div.info div.thamneal div.save-icon {
 main div.hearo-section-container div.trailer-show div.info div.right-box {
   display: grid;
   grid-template-columns: 20% auto;
+  padding-top: 14%;
 }
 div.video-play-icon {
   display: flex;
@@ -70,7 +72,8 @@ div.video-play-icon svg {
 }
 div.title-container {
   display: grid;
-  margin-top: 13%;
+  margin-top: 12%;
+  margin-bottom: 8%;
 }
 div.info div.right-box h2 {
   font-size: 1.4rem;
@@ -89,7 +92,7 @@ div.title-container div.tariler-duration-box {
   align-items: center;
 }
 div.title-container div.feedback-box {
-  display: flex;
+  display: none;
   justify-content: start;
   gap: 5%;
 }
@@ -199,14 +202,14 @@ button.browes-trailer:hover svg {
 /* =========================================================================================================== */
 div.featured-container {
   height: 50vh;
-  color: var(--white);
-  display: grid;
-  grid-template-rows: 17% auto;
+}
+div.featured-container > div.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 div.featured-container > h1 {
-  color: var(--yellow);
-  display: flex;
-  align-items: center;
+  height: 45%;
 }
 div.featured-container div.slider-container {
   overflow-x: scroll;
@@ -214,6 +217,7 @@ div.featured-container div.slider-container {
   height: 100%;
 }
 div.featured-container div.slider-container div.outer-box {
+  overflow: hidden;
   width: 100%;
   height: 100%;
   display: grid;
@@ -267,26 +271,23 @@ div.featured-container div.sild-box div.info a:hover {
 main div.popular-section-conatiner {
   width: 100%;
   height: 45vh;
-  display: grid;
-  gap: 2%;
   grid-template-rows: 25% auto;
-  color: var(--white);
 }
 
 main div.popular-section-conatiner div.title {
   display: grid;
   gap: 2%;
 }
-main div.popular-section-conatiner div.title h1 {
+/* main div.popular-section-conatiner div.title h1 {
   border-left: 5px solid var(--yellow);
   display: flex;
   align-items: center;
   padding-left: 1%;
-}
-main div.popular-section-conatiner div.title h1 svg {
+} */
+/* main div.popular-section-conatiner div.title h1 svg {
   fill: var(--yellow);
   height: 50%;
-}
+} */
 main div.popular-section-conatiner div.title div.option {
   width: 50%;
   display: flex;
@@ -313,9 +314,20 @@ div.celebrities-container div.celebrities-box {
   gap: 4%;
   display: grid;
 }
-div.celebrities-container div.celebrities-box img {
+div.celebrities-container div.celebrities-box div.img {
+  position: relative;
+  overflow: hidden;
+
   border-radius: 50%;
   width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+}
+div.celebrities-container div.celebrities-box img {
+  object-fit: cover;
+  width: 110%;
+  height: 140%;
 }
 div.celebrities-container div.celebrities-box div.info {
   display: flex;
@@ -327,4 +339,198 @@ div.celebrities-box div.name {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* =========================================================================================================== */
+div.watchlist-section {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+div.topTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.topTitle div.hadding {
+  color: var(--yellow);
+}
+div.topTitle div.more span {
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+}
+div.topTitle div.more span svg {
+  fill: var(--blue);
+}
+div.watchlist-container {
+  display: grid;
+  grid-template-rows: 20% auto;
+}
+div.watchlist-container div.top {
+  display: flex;
+  align-items: center;
+}
+/* div.watchlist-container div.top h1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  border-left: 2px solid var(--yellow);
+  padding-left: 1%;
+  gap: 2%;
+}
+div.watchlist-container div.top h1 svg {
+  transform: scale(1.5);
+  fill: var(--yellow); 
+}*/
+div.watchlist-container div.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+div.notlogin {
+  display: grid;
+  gap: 15%;
+}
+div.notlogin div,
+div.notlogin div.detail * {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+div.notlogin div.saveicon svg {
+  fill: var(--white);
+  transform: scale(2);
+}
+div.notlogin div.detail h3 {
+  color: var(--white);
+}
+div.notlogin div.detail span {
+  text-align: center;
+  color: var(--graytext);
+}
+
+div.notlogin div.btn {
+  display: grid;
+  justify-content: unset;
+}
+div.notlogin div.btn button {
+  justify-self: unset;
+  text-wrap-mode: nowrap;
+  color: var(--blue);
+  background-color: var(--headerBglight);
+  border-radius: 1rem;
+  width: 30%;
+  margin: auto;
+  padding: 2% 1%;
+}
+
+/* ====================================================================================================== */
+div.top-container {
+  position: relative;
+  height: 60vh;
+  /* border: 2px solid yellow; */
+}
+div.top-container div.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.top-container div.container {
+  /* border: 2px solid red; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 3%;
+  grid-template-columns: repeat(10, 14%);
+}
+div.container div.top-box {
+  /* border: 2px solid rebeccapurple; */
+  display: grid;
+  grid-template-rows: 60% auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  filter: drop-shadow(0px 0px 7px #bebaba3c);
+}
+div.container div.top-box div.image-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+div.container div.top-box div.image-box div.icon {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.container div.top-box div.image-box img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+div.container div.top-box div.info {
+  /* border: 2px solid green; */
+  background-color: var(--headerBg);
+  display: grid;
+  padding: 0 2%;
+}
+div.container div.top-box div.info div.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10%;
+}
+div.container div.top-box div.info div.rating div.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.container div.top-box div.info div.rating svg {
+  transform: scale(0.7);
+  fill: var(--yellow);
+}
+div.container div.top-box div.info div.icon svg {
+  fill: var(--blue);
+}
+div.container div.top-box div.info div.description h4 {
+  width: 100%;
+  font-size: 0.9rem;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+div.info div.addbtn,
+div.info div.trailerbtn {
+  display: flex;
+  justify-content: center;
+}
+div.info button:hover {
+  filter: brightness(120%);
+}
+div.info div.addbtn button,
+div.info div.trailerbtn button {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  border-radius: 1rem;
+  padding: 1%;
+}
+div.info div.addbtn button {
+  background-color: var(--headerBglight);
+}
+div.info div.addbtn button svg {
+  transform: scale(0.7);
+}
+div.info div.trailerbtn button {
+  background-color: transparent;
 }

@@ -34,4 +34,10 @@ async function API({ URL }) {
     .catch((err) => console.error(err));
   return A;
 }
-export { API, API_KEY };
+let trendingUrl = "./src/JSON/IMDB/toptrendingtrailer.json";
+let topUrl = "./src/JSON/IMDB/topmeterActor.json";
+let trendingData = await API({ URL: trendingUrl });
+trendingData = trendingData.data.topTrendingTitles.edges;
+let topActors = await API({ URL: topUrl });
+topActors = topActors.data.topMeterNames.edges;
+export { API, API_KEY, trendingData, topActors };

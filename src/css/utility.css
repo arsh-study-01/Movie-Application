@@ -19,7 +19,9 @@
   --yello-icon: #999999;
   --darkgray: #2e2d2d;
   --yellow: yellow;
+  --blue: lightblue;
   --hero-image-left: 55;
+  --top-celebrty: 15;
   --trailer-botton-shadow: linear-gradient(
     transparent,
     #000000f5,
@@ -126,4 +128,30 @@ svg:hover {
   fill: var(--yellow);
   cursor: pointer;
   transform: scale(1.1);
+}
+svg.UP {
+  fill: green;
+}
+svg.DOWN {
+  fill: red;
+  transform: rotate(180deg);
+}
+svg.FLAT {
+  display: none;
+}
+h1.seciton-hadding {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  border-left: 2px solid var(--yellow);
+  padding-left: 1%;
+  gap: 2%;
+}
+div.sectionContainer {
+  margin-top: 2%;
+  display: grid;
+  gap: 2%;
+  grid-template-rows: 15% auto;
+  color: var(--white);
 }

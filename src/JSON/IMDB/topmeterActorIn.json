@@ -1,0 +1,488 @@
+{
+  "data": {
+    "topMeterNames": {
+      "edges": [
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm5896355",
+            "nameText": {
+              "text": "Anya Taylor-Joy"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm4152883713",
+              "url": "https://m.media-amazon.com/images/M/MV5BMGZjYzcxNDEtNTU1Yi00Nzc3LTlhZjQtZTUwZDQxNjQ5MDIzXkEyXkFqcGc@._V1_.jpg",
+              "height": 2048,
+              "width": 1365
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 1,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 26
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm3138882",
+            "nameText": {
+              "text": "Britt Lower"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm3121115137",
+              "url": "https://m.media-amazon.com/images/M/MV5BOWM2NzlkMTktMjcwZi00NjNhLWE3YTUtZGUwM2E4OGU3MTIyXkEyXkFqcGc@._V1_CR1044,22,1534,2301_.jpg",
+              "height": 2301,
+              "width": 1534
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 2,
+              "rankChange": {
+                "changeDirection": "FLAT",
+                "difference": 0
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm3948952",
+            "nameText": {
+              "text": "Vanessa Kirby"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm33703169",
+              "url": "https://m.media-amazon.com/images/M/MV5BZTgyMDhmYWUtZWUzZS00ODBiLWIyMzctMTM3ODZlNmU0ZTg1XkEyXkFqcGc@._V1_.jpg",
+              "height": 1462,
+              "width": 1000
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 3,
+              "rankChange": {
+                "changeDirection": "DOWN",
+                "difference": 2
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm3239803",
+            "nameText": {
+              "text": "Kaitlyn Dever"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm2544061697",
+              "url": "https://m.media-amazon.com/images/M/MV5BMzg5ZjIwM2QtN2MxMi00OGNiLTg4NDgtODc2MGU4NWZiNWQ3XkEyXkFqcGc@._V1_.jpg",
+              "height": 1190,
+              "width": 852
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 4,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 6
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm7393303",
+            "nameText": {
+              "text": "Sophie Thatcher"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm992999937",
+              "url": "https://m.media-amazon.com/images/M/MV5BMTk4Njc5NzktNDhmYS00OTY2LThjNmItM2U1NjNlNGQwZjMxXkEyXkFqcGc@._V1_.jpg",
+              "height": 902,
+              "width": 702
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 5,
+              "rankChange": {
+                "changeDirection": "DOWN",
+                "difference": 1
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm4960279",
+            "nameText": {
+              "text": "Margaret Qualley"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm2157481986",
+              "url": "https://m.media-amazon.com/images/M/MV5BN2Q4MjgyNGMtNzY5Ni00Mjc1LTk5OWUtNjgzYTYzOWM5MzMyXkEyXkFqcGc@._V1_CR285,0,449,674_.jpg",
+              "height": 674,
+              "width": 449
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 6,
+              "rankChange": {
+                "changeDirection": "DOWN",
+                "difference": 1
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm5700898",
+            "nameText": {
+              "text": "Mikey Madison"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm48263425",
+              "url": "https://m.media-amazon.com/images/M/MV5BMGQ3NzA1ODEtODMwZi00NTQzLWIzYTQtODI0MjVkZDZiY2M4XkEyXkFqcGc@._V1_.jpg",
+              "height": 682,
+              "width": 1024
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 7,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 21
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm10695146",
+            "nameText": {
+              "text": "Leo Woodall"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm1575959297",
+              "url": "https://m.media-amazon.com/images/M/MV5BM2NjNjk0NTItN2M4My00MzFmLWI5ODAtMjlmNTBlOTFhZTk4XkEyXkFqcGc@._V1_.jpg",
+              "height": 1340,
+              "width": 1114
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 8,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 47
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm0000250",
+            "nameText": {
+              "text": "Renée Zellweger"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm2651494401",
+              "url": "https://m.media-amazon.com/images/M/MV5BYzVkNGI3ZWQtMWJjYS00NmE5LTk0ZTQtNDFhZDY2MzZlOWM1XkEyXkFqcGc@._V1_.jpg",
+              "height": 3600,
+              "width": 2400
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 9,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 183
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm1886602",
+            "nameText": {
+              "text": "Miles Teller"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm462624001",
+              "url": "https://m.media-amazon.com/images/M/MV5BNWI3YWY1NWQtNDVhMy00ZWE1LWI2MzUtOTczNTg5MTllZmNjXkEyXkFqcGc@._V1_.jpg",
+              "height": 3611,
+              "width": 2433
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 10,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 208
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm1083404",
+            "nameText": {
+              "text": "Sarah Shahi"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm1598792192",
+              "url": "https://m.media-amazon.com/images/M/MV5BMTU0MzE2NTI1NV5BMl5BanBnXkFtZTcwODcwMzMwOQ@@._V1_.jpg",
+              "height": 2048,
+              "width": 1406
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 11,
+              "rankChange": {
+                "changeDirection": "DOWN",
+                "difference": 4
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm1901842",
+            "nameText": {
+              "text": "Dichen Lachman"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm145445632",
+              "url": "https://m.media-amazon.com/images/M/MV5BNzFmZTVjYmQtNGE2Ny00MGFiLTg3OTgtZWUwMTIwZmM1OGFiXkEyXkFqcGc@._V1_.jpg",
+              "height": 1000,
+              "width": 667
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 12,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 23
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm0647698",
+            "nameText": {
+              "text": "Kaitlin Olson"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm3666385408",
+              "url": "https://m.media-amazon.com/images/M/MV5BMTMxODAwMjQxNV5BMl5BanBnXkFtZTYwODEyMjAz._V1_.jpg",
+              "height": 679,
+              "width": 450
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 13,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 1
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm6024635",
+            "nameText": {
+              "text": "Shira Haas"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm2579105793",
+              "url": "https://m.media-amazon.com/images/M/MV5BNzI5Mzc0ZjYtMDg2MS00OGM5LThhODctY2NkNDg3ODhhMWI5XkEyXkFqcGc@._V1_.jpg",
+              "height": 3331,
+              "width": 3082
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 14,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 2296
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm1754059",
+            "nameText": {
+              "text": "Natalie Dormer"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm1074913280",
+              "url": "https://m.media-amazon.com/images/M/MV5BNjM4NjQwMzE1Ml5BMl5BanBnXkFtZTgwNjg5MTM0NzE@._V1_.jpg",
+              "height": 960,
+              "width": 637
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 15,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 403
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm6073955",
+            "nameText": {
+              "text": "Florence Pugh"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm338167297",
+              "url": "https://m.media-amazon.com/images/M/MV5BZmIxMTFkZTctYzhkZi00MmQ4LThhYzEtMmQwMGZjNzA5MDg0XkEyXkFqcGc@._V1_.jpg",
+              "height": 1600,
+              "width": 1194
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 16,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 69
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm1486317",
+            "nameText": {
+              "text": "Alycia Debnam-Carey"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm1635488770",
+              "url": "https://m.media-amazon.com/images/M/MV5BZmU5NmIwOWUtNTI2MS00NTE3LTkxNjctYmMzZjlhZDYyZTIyXkEyXkFqcGc@._V1_CR0,0,2725,4088_.jpg",
+              "height": 4088,
+              "width": 2725
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 17,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 59
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm0006969",
+            "nameText": {
+              "text": "Elizabeth Banks"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm2452861441",
+              "url": "https://m.media-amazon.com/images/M/MV5BODNlYzdjZTUtYTQ2ZC00ZmQ1LWI2Y2EtNTY4ZjlmY2ZkNDA4XkEyXkFqcGc@._V1_.jpg",
+              "height": 3000,
+              "width": 2000
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 18,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 314
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm0004930",
+            "nameText": {
+              "text": "Scott Foley"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm298988032",
+              "url": "https://m.media-amazon.com/images/M/MV5BZDM0ZWUwM2MtZTQ5Mi00YWUwLWEwMzItY2EyOTNmY2M2OTQwXkEyXkFqcGc@._V1_.jpg",
+              "height": 320,
+              "width": 240
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 19,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 785
+              }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Name",
+            "id": "nm0000129",
+            "nameText": {
+              "text": "Tom Cruise"
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm3157463809",
+              "url": "https://m.media-amazon.com/images/M/MV5BMmU1YWU1NmMtMjAyMi00MjFiLWFmZmUtOTc1ZjI5ODkxYmQyXkEyXkFqcGc@._V1_.jpg",
+              "height": 5122,
+              "width": 3795
+            },
+            "meterRanking": {
+              "__typename": "NameMeterRanking",
+              "currentRank": 20,
+              "rankChange": {
+                "changeDirection": "UP",
+                "difference": 59
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

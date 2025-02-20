@@ -1,6 +1,7 @@
 @media screen and (max-width: 600px) {
   :root {
     --hero-image-left: 96;
+    --top-celebrty: 45;
   }
   header,
   input,
@@ -233,6 +234,24 @@
   }
   main div.popular-section-conatiner div.title div.option {
     width: 100%;
+  }
+  /* ====================================================================================================== */
+  div.watchlist-section {
+    height: 40vh;
+    grid-template-rows: auto;
+  }
+  div.topTitle {
+    display: none;
+  }
+  /* ========================================================================================== */
+  div.top-container div.container {
+    grid-template-columns: repeat(10, 42%);
+  }
+  div.top-container {
+    height: 55vh;
+  }
+  div.container div.top-box {
+    /* grid-template-rows: 58% auto; */
   }
 }
 @media screen and (min-width: 900px) {
