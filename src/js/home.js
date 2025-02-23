@@ -1,14 +1,20 @@
-import { trendingData, topActors } from "./API/config/utility.js";
+import {
+  trendingData,
+  topActors,
+  TopRating,
+  popularMovie,
+  popular20Movies,
+} from "./API/config/utility.js";
 
 // ======================================================================================
 let x = window.getComputedStyle(document.body);
 let hero_image_left = parseFloat(x.getPropertyValue("--hero-image-left"));
 let top_celebrty = parseFloat(x.getPropertyValue("--top-celebrty"));
-async function Trending() {
+async function Trending(FetchData) {
   try {
     // data = trendingData;
     let Length_of_Elm = 0;
-    let result = trendingData;
+    let result = FetchData;
     result.forEach((element) => {
       let data = element.node.item.latestTrailer;
       if (data) {
@@ -149,17 +155,16 @@ async function Trending() {
     });
 
     trendingAnimation(Length_of_Elm);
-    topWeek();
   } catch (error) {
     console.log(error);
   }
 }
-async function top_actores() {
+async function top_actores(FetchData) {
   let elm = document.querySelector(
     "div.celebrities-container > div.outer-container"
   );
 
-  elm.style.gridTemplateColumns = `repeat(${topActors.length}, ${top_celebrty}%)`;
+  elm.style.gridTemplateColumns = `repeat(${FetchData.length}, ${top_celebrty}%)`;
   topActors.forEach((element) => {
     let z = `<div class="celebrities-box">
              <div class="img">
@@ -220,21 +225,18 @@ function trendingAnimation(trendingLength = 20) {
   }
   Repeating();
 }
-async function topWeek() {
-  console.log(trendingData);
+async function topWeek(FetchData) {
   let Reval = 10;
   let elm = document.querySelector("div.Topweekbox");
   for (let i = 0; i < Reval; i++) {
-    if (trendingData[i].node.item.latestTrailer) {
-      console.log(trendingData[i], i);
+    if (FetchData[i].node.item.latestTrailer) {
       let thambnail =
-        trendingData[i].node.item.latestTrailer.primaryTitle.primaryImage.url;
+        FetchData[i].node.item.latestTrailer.primaryTitle.primaryImage.url;
       let Rating =
-        trendingData[i].node.item.latestTrailer.primaryTitle.ratingsSummary
+        FetchData[i].node.item.latestTrailer.primaryTitle.ratingsSummary
           .aggregateRating;
       let Title =
-        trendingData[i].node.item.latestTrailer.primaryTitle.titleText.text;
-      console.log(elm);
+        FetchData[i].node.item.latestTrailer.primaryTitle.titleText.text;
       elm.innerHTML += `  <div class="top-box">
               <div class="image-box">
                 <div class="icon">
@@ -322,5 +324,201 @@ async function topWeek() {
     }
   }
 }
-Trending();
-top_actores();
+async function TopRatting(FetchData) {
+  let Reval = 10;
+  let elm = document.querySelector("div.topRating");
+  for (let i = 0; i < Reval; i++) {
+    if (FetchData[i]) {
+      let thambnail = FetchData[i].primaryImage.url;
+      let Rating = FetchData[i].ratingsSummary.aggregateRating;
+      let Title = FetchData[i].titleText.text;
+      elm.innerHTML += `  <div class="top-box">
+              <div class="image-box">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#e8eaed"
+                  >
+                    <path
+                      d="M200-120v-640q0-33 23.5-56.5T280-840h240v80H280v518l200-86 200 86v-278h80v400L480-240 200-120Zm80-640h240-240Zm400 160v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z"
+                    />
+                  </svg>
+                </div>
+                <img src="${thambnail}" alt="" />
+              </div>
+              <div class="info">
+                <div class="rating">
+                  <div class="left">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="m606-286-33-144 111-96-146-13-58-136v312l126 77ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                      />
+                    </svg>
+                    <span>${Rating}</span>
+                  </div>
+                  <div class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4><span>${i + 1}. </span>${Title}</h4>
+                </div>
+                <div class="addbtn">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M440-120v-320H120v-80h320v-320h80v320h320v80H520v320h-80Z"
+                      />
+                    </svg>
+                    WatchList
+                  </button>
+                </div>
+                <div class="trailerbtn">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path d="M400-280v-400l200 200-200 200Z" />
+                    </svg>
+                    Trailer
+                  </button>
+                </div>
+              </div>
+            </div>`;
+    } else {
+      Reval++;
+    }
+  }
+}
+async function Popular20Movies(FetchData) {
+  let Reval = 10;
+  let elm = document.querySelector("div.popularMovies");
+  for (let i = 0; i < Reval; i++) {
+    if (FetchData[i]) {
+      let thambnail = FetchData[i].primaryImage;
+      let Rating = FetchData[i].averageRating;
+      let Title = FetchData[i].primaryTitle;
+      elm.innerHTML += `  <div class="top-box">
+              <div class="image-box">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#e8eaed"
+                  >
+                    <path
+                      d="M200-120v-640q0-33 23.5-56.5T280-840h240v80H280v518l200-86 200 86v-278h80v400L480-240 200-120Zm80-640h240-240Zm400 160v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z"
+                    />
+                  </svg>
+                </div>
+                <img src="${thambnail}" alt="" />
+              </div>
+              <div class="info">
+                <div class="rating">
+                  <div class="left">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="m606-286-33-144 111-96-146-13-58-136v312l126 77ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+                      />
+                    </svg>
+                    <span>${Rating}</span>
+                  </div>
+                  <div class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="description">
+                  <h4><span>${i + 1}. </span>${Title}</h4>
+                </div>
+                <div class="addbtn">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M440-120v-320H120v-80h320v-320h80v320h320v80H520v320h-80Z"
+                      />
+                    </svg>
+                    WatchList
+                  </button>
+                </div>
+                <div class="trailerbtn">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path d="M400-280v-400l200 200-200 200Z" />
+                    </svg>
+                    Trailer
+                  </button>
+                </div>
+              </div>
+            </div>`;
+    } else {
+      Reval++;
+    }
+  }
+}
+Trending(trendingData);
+top_actores(topActors);
+topWeek(trendingData);
+TopRatting(TopRating);
+Popular20Movies(popular20Movies);
+// =========================================================================================
+
+console.log(popular20Movies);

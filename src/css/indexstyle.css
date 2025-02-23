@@ -430,7 +430,7 @@ div.notlogin div.btn button {
 /* ====================================================================================================== */
 div.top-container {
   position: relative;
-  height: 60vh;
+  height: 100%;
   /* border: 2px solid yellow; */
 }
 div.top-container div.top {
@@ -533,4 +533,66 @@ div.info div.addbtn button svg {
 }
 div.info div.trailerbtn button {
   background-color: transparent;
+}
+/* ================================================================================================================== */
+div.topRating-section {
+  grid-template-rows: 20% auto;
+}
+div.topRating-section div.top {
+  display: grid;
+  gap: 2%;
+}
+div.topRating-section div.top span {
+  color: var(--graytext);
+  margin-left: 1%;
+}
+div.topRating-section div.top button {
+  margin-left: 1%;
+  background-color: transparent;
+  text-align: left;
+  color: var(--blue);
+}
+div.topRating-section div.top button:hover {
+  text-decoration: underline;
+}
+/* ================================================================================================================== */
+div.popularInterest-section {
+  height: 33vh;
+  gap: 8%;
+}
+div.popularInterest {
+  /* border: 2px solid; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: grid;
+  gap: 2.5%;
+  grid-template-columns: repeat(49, 23%);
+}
+div.popularInterest {
+  height: 100%;
+}
+div.popularInterest div.box {
+  background-color: var(--headerBglight);
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+div.popularInterest div.box div.img {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 60% 40%;
+}
+div.popularInterest div.box div.img img {
+  width: 100%;
+}
+div.popularInterest div.box h2 {
+  margin-left: 2%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 3% 0;
 }

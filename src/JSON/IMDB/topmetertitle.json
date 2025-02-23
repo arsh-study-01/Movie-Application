@@ -1,0 +1,1002 @@
+{
+  "data": {
+    "topMeterTitles": {
+      "edges": [
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt14513804",
+            "titleText": {
+              "text": "Captain America: Brave New World",
+              "isOriginalTitle": true
+            },
+            "originalTitleText": {
+              "text": "Captain America: Brave New World",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2025,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 2,
+              "day": 14,
+              "year": 2025,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "movie",
+              "text": "Movie",
+              "categories": [
+                { "id": "movie", "text": "Movie", "value": "movie" }
+              ],
+              "canHaveEpisodes": false,
+              "isEpisode": false,
+              "isSeries": false,
+              "displayableProperty": { "value": { "plainText": "" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm3793588994",
+              "url": "https://m.media-amazon.com/images/M/MV5BNDRjY2E0ZmEtN2QwNi00NTEwLWI3MWItODNkMGYwYWFjNGE0XkEyXkFqcGc@._V1_.jpg",
+              "height": 1500,
+              "width": 1000
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 1,
+              "rankChange": { "changeDirection": "UP", "difference": 17 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt11280740",
+            "titleText": { "text": "Severance", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "Severance",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2022,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 2,
+              "day": 18,
+              "year": 2022,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [{ "id": "internet", "text": "internet" }],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "tvSeries",
+              "text": "TV Series",
+              "categories": [{ "id": "tv", "text": "TV", "value": "tv" }],
+              "canHaveEpisodes": true,
+              "isEpisode": false,
+              "isSeries": true,
+              "displayableProperty": { "value": { "plainText": "TV Series" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm1676647938",
+              "url": "https://m.media-amazon.com/images/M/MV5BZDI5YzJhODQtMzQyNy00YWNmLWIxMjUtNDBjNjA5YWRjMzExXkEyXkFqcGc@._V1_.jpg",
+              "height": 3000,
+              "width": 2000
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 1,
+              "rankChange": { "changeDirection": "FLAT", "difference": 0 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt27444205",
+            "titleText": { "text": "Paradise", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "Paradise",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2025,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 1,
+              "day": 26,
+              "year": 2025,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [{ "id": "internet", "text": "internet" }],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "tvSeries",
+              "text": "TV Series",
+              "categories": [{ "id": "tv", "text": "TV", "value": "tv" }],
+              "canHaveEpisodes": true,
+              "isEpisode": false,
+              "isSeries": true,
+              "displayableProperty": { "value": { "plainText": "TV Series" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm3281361410",
+              "url": "https://m.media-amazon.com/images/M/MV5BODU0MGE1NzMtYzFiNS00OWY1LThmYTUtZDE5NDIwZDNmMWRlXkEyXkFqcGc@._V1_.jpg",
+              "height": 1837,
+              "width": 1240
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 2,
+              "rankChange": { "changeDirection": "FLAT", "difference": 0 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt30428143",
+            "titleText": {
+              "text": "Apple Cider Vinegar",
+              "isOriginalTitle": true
+            },
+            "originalTitleText": {
+              "text": "Apple Cider Vinegar",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2025,
+              "endYear": 2025
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 2,
+              "day": 6,
+              "year": 2025,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [{ "id": "internet", "text": "internet" }],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "tvMiniSeries",
+              "text": "TV Mini Series",
+              "categories": [{ "id": "tv", "text": "TV", "value": "tv" }],
+              "canHaveEpisodes": true,
+              "isEpisode": false,
+              "isSeries": true,
+              "displayableProperty": {
+                "value": { "plainText": "TV Mini Series" }
+              }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm3070923522",
+              "url": "https://m.media-amazon.com/images/M/MV5BODVhYTMwMzQtODA2Zi00MTEwLTgyYWItZmM0OTJiMjczNWVmXkEyXkFqcGc@._V1_.jpg",
+              "height": 2222,
+              "width": 1500
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 3,
+              "rankChange": { "changeDirection": "UP", "difference": 16 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt6741278",
+            "titleText": { "text": "Invincible", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "Invincible",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2021,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 3,
+              "day": 26,
+              "year": 2021,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [{ "id": "internet", "text": "internet" }],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "tvSeries",
+              "text": "TV Series",
+              "categories": [{ "id": "tv", "text": "TV", "value": "tv" }],
+              "canHaveEpisodes": true,
+              "isEpisode": false,
+              "isSeries": true,
+              "displayableProperty": { "value": { "plainText": "TV Series" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm1526242818",
+              "url": "https://m.media-amazon.com/images/M/MV5BZjE4ZDU4ZjMtZjliYS00M2ZmLThkNTItN2U3MmJjOGU0NmIxXkEyXkFqcGc@._V1_.jpg",
+              "height": 3000,
+              "width": 2000
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 4,
+              "rankChange": { "changeDirection": "UP", "difference": 2 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt13654226",
+            "titleText": { "text": "The Gorge", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "The Gorge",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2025,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 2,
+              "day": 14,
+              "year": 2025,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [{ "id": "internet", "text": "internet" }],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "movie",
+              "text": "Movie",
+              "categories": [
+                { "id": "movie", "text": "Movie", "value": "movie" }
+              ],
+              "canHaveEpisodes": false,
+              "isEpisode": false,
+              "isSeries": false,
+              "displayableProperty": { "value": { "plainText": "" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm3821903362",
+              "url": "https://m.media-amazon.com/images/M/MV5BOTQ5Y2QyYTktYmFmZi00NWJlLWE0MzgtYTA4M2I0ZjQwZjcxXkEyXkFqcGc@._V1_.jpg",
+              "height": 3000,
+              "width": 2000
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 2,
+              "rankChange": { "changeDirection": "UP", "difference": 58 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt13406094",
+            "titleText": { "text": "The White Lotus", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "The White Lotus",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2021,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 7,
+              "day": 11,
+              "year": 2021,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "tvSeries",
+              "text": "TV Series",
+              "categories": [{ "id": "tv", "text": "TV", "value": "tv" }],
+              "canHaveEpisodes": true,
+              "isEpisode": false,
+              "isSeries": true,
+              "displayableProperty": { "value": { "plainText": "TV Series" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm437293314",
+              "url": "https://m.media-amazon.com/images/M/MV5BZmM1MGM0MDQtZTAzNy00ZGJkLWI4MDUtNjBmMzdhYjhlM2QwXkEyXkFqcGc@._V1_.jpg",
+              "height": 1200,
+              "width": 810
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 5,
+              "rankChange": { "changeDirection": "UP", "difference": 6 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt7221388",
+            "titleText": { "text": "Cobra Kai", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "Cobra Kai",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2018,
+              "endYear": 2025
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 5,
+              "day": 2,
+              "year": 2018,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [{ "id": "internet", "text": "internet" }],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "tvSeries",
+              "text": "TV Series",
+              "categories": [{ "id": "tv", "text": "TV", "value": "tv" }],
+              "canHaveEpisodes": true,
+              "isEpisode": false,
+              "isSeries": true,
+              "displayableProperty": { "value": { "plainText": "TV Series" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm1349744385",
+              "url": "https://m.media-amazon.com/images/M/MV5BYjA3NDkwNzktNjJkYi00ODNhLWFhYzQtYzk5NjU4MDM0OWZmXkEyXkFqcGc@._V1_.jpg",
+              "height": 2560,
+              "width": 1728
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 6,
+              "rankChange": { "changeDirection": "UP", "difference": 80 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt20969586",
+            "titleText": { "text": "Thunderbolts*", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "Thunderbolts*",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2025,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 5,
+              "day": 2,
+              "year": 2025,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "movie",
+              "text": "Movie",
+              "categories": [
+                { "id": "movie", "text": "Movie", "value": "movie" }
+              ],
+              "canHaveEpisodes": false,
+              "isEpisode": false,
+              "isSeries": false,
+              "displayableProperty": { "value": { "plainText": "" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm2682229762",
+              "url": "https://m.media-amazon.com/images/M/MV5BZmFkZTQ1NDktZWJjOC00ZTVjLTg0NmMtMmMzZDcxZmExNDE1XkEyXkFqcGc@._V1_.jpg",
+              "height": 3000,
+              "width": 2025
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 3,
+              "rankChange": { "changeDirection": "UP", "difference": 100 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt13918776",
+            "titleText": { "text": "The Night Agent", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "The Night Agent",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2023,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 3,
+              "day": 23,
+              "year": 2023,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [{ "id": "internet", "text": "internet" }],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "tvSeries",
+              "text": "TV Series",
+              "categories": [{ "id": "tv", "text": "TV", "value": "tv" }],
+              "canHaveEpisodes": true,
+              "isEpisode": false,
+              "isSeries": true,
+              "displayableProperty": { "value": { "plainText": "TV Series" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm955879426",
+              "url": "https://m.media-amazon.com/images/M/MV5BYjVmZWZkMTktODNiYS00YTYzLWE4NDAtYTgwOGFhYjc4ZGQ4XkEyXkFqcGc@._V1_.jpg",
+              "height": 1350,
+              "width": 1080
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 7,
+              "rankChange": { "changeDirection": "DOWN", "difference": 4 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt4236770",
+            "titleText": { "text": "Yellowstone", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "Yellowstone",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2018,
+              "endYear": 2024
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 6,
+              "day": 20,
+              "year": 2018,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "tvSeries",
+              "text": "TV Series",
+              "categories": [{ "id": "tv", "text": "TV", "value": "tv" }],
+              "canHaveEpisodes": true,
+              "isEpisode": false,
+              "isSeries": true,
+              "displayableProperty": { "value": { "plainText": "TV Series" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm1304259585",
+              "url": "https://m.media-amazon.com/images/M/MV5BYzE2ODQ0NmQtYmMxMS00MGRlLTgwOGEtYjRkN2FkYmZlN2JlXkEyXkFqcGc@._V1_.jpg",
+              "height": 742,
+              "width": 480
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 8,
+              "rankChange": { "changeDirection": "DOWN", "difference": 3 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt5040012",
+            "titleText": { "text": "Nosferatu", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "Nosferatu",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2024,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 12,
+              "day": 25,
+              "year": 2024,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "movie",
+              "text": "Movie",
+              "categories": [
+                { "id": "movie", "text": "Movie", "value": "movie" }
+              ],
+              "canHaveEpisodes": false,
+              "isEpisode": false,
+              "isSeries": false,
+              "displayableProperty": { "value": { "plainText": "" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm4090992898",
+              "url": "https://m.media-amazon.com/images/M/MV5BY2FhZGE3NmEtNWJjOC00NDI1LWFhMTQtMjcxNmQzZmEwNGIzXkEyXkFqcGc@._V1_.jpg",
+              "height": 1600,
+              "width": 1080
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 4,
+              "rankChange": { "changeDirection": "FLAT", "difference": 0 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt32063050",
+            "titleText": {
+              "text": "Bridget Jones: Mad About the Boy",
+              "isOriginalTitle": true
+            },
+            "originalTitleText": {
+              "text": "Bridget Jones: Mad About the Boy",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2025,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 2,
+              "day": 13,
+              "year": 2025,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [{ "id": "internet", "text": "internet" }],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "movie",
+              "text": "Movie",
+              "categories": [
+                { "id": "movie", "text": "Movie", "value": "movie" }
+              ],
+              "canHaveEpisodes": false,
+              "isEpisode": false,
+              "isSeries": false,
+              "displayableProperty": { "value": { "plainText": "" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm1368299522",
+              "url": "https://m.media-amazon.com/images/M/MV5BMDdlY2Y2ZWEtYjk4Mi00Yjg3LWFlM2MtMWI1ZjVlNGQ5NTNjXkEyXkFqcGc@._V1_.jpg",
+              "height": 5000,
+              "width": 3158
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 5,
+              "rankChange": { "changeDirection": "UP", "difference": 49 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt26748649",
+            "titleText": { "text": "High Potential", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "High Potential",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2024,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 9,
+              "day": 17,
+              "year": 2024,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "tvSeries",
+              "text": "TV Series",
+              "categories": [{ "id": "tv", "text": "TV", "value": "tv" }],
+              "canHaveEpisodes": true,
+              "isEpisode": false,
+              "isSeries": true,
+              "displayableProperty": { "value": { "plainText": "TV Series" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm3687999745",
+              "url": "https://m.media-amazon.com/images/M/MV5BZWI5ZmE3ZjYtMGQzZS00ZWNhLThlNjYtYTRiY2UyYzg4ZDA0XkEyXkFqcGc@._V1_.jpg",
+              "height": 755,
+              "width": 510
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 9,
+              "rankChange": { "changeDirection": "UP", "difference": 1 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt28607951",
+            "titleText": { "text": "Anora", "isOriginalTitle": true },
+            "originalTitleText": { "text": "Anora", "isOriginalTitle": true },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2024,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 11,
+              "day": 8,
+              "year": 2024,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "movie",
+              "text": "Movie",
+              "categories": [
+                { "id": "movie", "text": "Movie", "value": "movie" }
+              ],
+              "canHaveEpisodes": false,
+              "isEpisode": false,
+              "isSeries": false,
+              "displayableProperty": { "value": { "plainText": "" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm3076680449",
+              "url": "https://m.media-amazon.com/images/M/MV5BYThiN2M0NTItODRmNC00NDhlLWFiYTgtMWM2YTEyYzI3ZTY1XkEyXkFqcGc@._V1_.jpg",
+              "height": 5160,
+              "width": 3483
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 6,
+              "rankChange": { "changeDirection": "UP", "difference": 7 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt8999762",
+            "titleText": { "text": "The Brutalist", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "The Brutalist",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2024,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 1,
+              "day": 24,
+              "year": 2025,
+              "country": { "id": "CA" },
+              "restriction": null,
+              "attributes": [],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "movie",
+              "text": "Movie",
+              "categories": [
+                { "id": "movie", "text": "Movie", "value": "movie" }
+              ],
+              "canHaveEpisodes": false,
+              "isEpisode": false,
+              "isSeries": false,
+              "displayableProperty": { "value": { "plainText": "" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm2810024194",
+              "url": "https://m.media-amazon.com/images/M/MV5BM2U0MWRjZTMtMDVhNC00MzY4LTgwOTktZGQ2MDdiYTI4OWMxXkEyXkFqcGc@._V1_.jpg",
+              "height": 3000,
+              "width": 1922
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 7,
+              "rankChange": { "changeDirection": "DOWN", "difference": 1 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt32252772",
+            "titleText": {
+              "text": "Dexter: Original Sin",
+              "isOriginalTitle": true
+            },
+            "originalTitleText": {
+              "text": "Dexter: Original Sin",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2024,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 12,
+              "day": 13,
+              "year": 2024,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [{ "id": "internet", "text": "internet" }],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "tvSeries",
+              "text": "TV Series",
+              "categories": [{ "id": "tv", "text": "TV", "value": "tv" }],
+              "canHaveEpisodes": true,
+              "isEpisode": false,
+              "isSeries": true,
+              "displayableProperty": { "value": { "plainText": "TV Series" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm2208602114",
+              "url": "https://m.media-amazon.com/images/M/MV5BYTVlZjNhYjktMWYyNy00MmYyLTk3ZjctMDQwMWIwYjdkODc3XkEyXkFqcGc@._V1_.jpg",
+              "height": 4000,
+              "width": 2700
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 10,
+              "rankChange": { "changeDirection": "DOWN", "difference": 1 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt26584495",
+            "titleText": { "text": "Companion", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "Companion",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2025,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 1,
+              "day": 31,
+              "year": 2025,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "movie",
+              "text": "Movie",
+              "categories": [
+                { "id": "movie", "text": "Movie", "value": "movie" }
+              ],
+              "canHaveEpisodes": false,
+              "isEpisode": false,
+              "isSeries": false,
+              "displayableProperty": { "value": { "plainText": "" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm4044067330",
+              "url": "https://m.media-amazon.com/images/M/MV5BYjkyZTA5NzAtYWU3Zi00MWM4LTgxNzAtNDQxY2JmNjMwYjk4XkEyXkFqcGc@._V1_.jpg",
+              "height": 4096,
+              "width": 2764
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 8,
+              "rankChange": { "changeDirection": "DOWN", "difference": 5 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt26743210",
+            "titleText": {
+              "text": "How to Train Your Dragon",
+              "isOriginalTitle": true
+            },
+            "originalTitleText": {
+              "text": "How to Train Your Dragon",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2025,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 6,
+              "day": 13,
+              "year": 2025,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "movie",
+              "text": "Movie",
+              "categories": [
+                { "id": "movie", "text": "Movie", "value": "movie" }
+              ],
+              "canHaveEpisodes": false,
+              "isEpisode": false,
+              "isSeries": false,
+              "displayableProperty": { "value": { "plainText": "" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm953326338",
+              "url": "https://m.media-amazon.com/images/M/MV5BOGU0ZWYzZmUtZDM5Yi00NjJlLTllNTctY2NiZWVkOTIzM2JlXkEyXkFqcGc@._V1_.jpg",
+              "height": 2500,
+              "width": 1579
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 9,
+              "rankChange": { "changeDirection": "UP", "difference": 83 }
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "Title",
+            "id": "tt17526714",
+            "titleText": { "text": "The Substance", "isOriginalTitle": true },
+            "originalTitleText": {
+              "text": "The Substance",
+              "isOriginalTitle": true
+            },
+            "releaseYear": {
+              "__typename": "YearRange",
+              "year": 2024,
+              "endYear": null
+            },
+            "releaseDate": {
+              "__typename": "ReleaseDate",
+              "month": 9,
+              "day": 20,
+              "year": 2024,
+              "country": { "id": "US" },
+              "restriction": null,
+              "attributes": [],
+              "displayableProperty": { "qualifiersInMarkdownList": null }
+            },
+            "titleType": {
+              "__typename": "TitleType",
+              "id": "movie",
+              "text": "Movie",
+              "categories": [
+                { "id": "movie", "text": "Movie", "value": "movie" }
+              ],
+              "canHaveEpisodes": false,
+              "isEpisode": false,
+              "isSeries": false,
+              "displayableProperty": { "value": { "plainText": "" } }
+            },
+            "primaryImage": {
+              "__typename": "Image",
+              "id": "rm2243260161",
+              "url": "https://m.media-amazon.com/images/M/MV5BZDQ1NGE5MGMtYzdlZC00ODExLWJlMDMtNWU4NjA5OWYwMDEwXkEyXkFqcGc@._V1_.jpg",
+              "height": 2844,
+              "width": 1944
+            },
+            "meterRanking": {
+              "__typename": "TitleMeterRanking",
+              "currentRank": 10,
+              "rankChange": { "changeDirection": "DOWN", "difference": 3 }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

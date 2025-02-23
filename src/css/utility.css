@@ -154,4 +154,5 @@ div.sectionContainer {
   gap: 2%;
   grid-template-rows: 15% auto;
   color: var(--white);
+  height: 65vh;
 }

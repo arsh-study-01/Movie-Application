@@ -1,14 +1,14 @@
-// const API_KEY =
-//   "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhY2I2NTRjYjZjNGQ4YjA3ZjNhMmRmNjdmZDdhMjliYiIsIm5iZiI6MTcyODczNTI5Mi4wOSwic3ViIjoiNjcwYTY4M2NiMTVkOTdiMWE5M2MwMTU1Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.CvEBYGlCttCJULoAylPFCyTaI0k2h-qQ6UT--lLX3uo";
-// let imageUrl = "https://image.tmdb.org/t/p/w500/";
-// const options = {
-//   method: "GET",
-//   headers: {
-//     accept: "application/json",
-//     Authorization: `Bearer ${API_KEY}`,
-//   },
-// };
-// const url ="https://imdb8.p.rapidapi.com/title/v2/get-top-trending-video-trailers?first=20";
+/*
+--------------Trending Data Url-----------------------
+const url ="https://imdb8.p.rapidapi.com/title/v2/get-top-trending-video-trailers?first=20";
+--------------Top Actor Data Url-----------------------
+const url ="https://imdb8.p.rapidapi.com/title/v2/get-top-trending-video-trailers?first=20";
+--------------Top Meter Title Data Url-----------------------
+const url ='https://imdb8.p.rapidapi.com/title/v2/get-top-meter?topMeterTitlesType=ALL&first=20&country=US&language=en-US';
+--------------Popular Movies Data Url-----------------------
+const url ='https://imdb236.p.rapidapi.com/imdb/most-popular-movies';
+
+*/
 // const url = "./src/JSON/IMDB/toptrendingtrailer.json";
 const API_KEY = `6630956242msh033c4ece231b4f9p11e67djsn46f7d3cbea8e`;
 const options = {
@@ -18,15 +18,6 @@ const options = {
     "x-rapidapi-host": "imdb8.p.rapidapi.com",
   },
 };
-
-// try {
-//   const response = await fetch(url, options);
-//   const result = await response.text();
-//   console.log(result);
-// } catch (error) {
-//   console.error(error);
-// }
-// let Basie_URL = `https://api.themoviedb.org/3/trending/all/day?language=en-US`;
 async function API({ URL }) {
   var A = await fetch(URL, options)
     .then((res) => res.json())
@@ -34,10 +25,40 @@ async function API({ URL }) {
     .catch((err) => console.error(err));
   return A;
 }
+// ===================URL Variable============================
 let trendingUrl = "./src/JSON/IMDB/toptrendingtrailer.json";
 let topUrl = "./src/JSON/IMDB/topmeterActor.json";
+let popularMovieUrl = "./src/JSON/IMDB/mostPopularMovie.json";
+// ===================Fetch Call ==============================
 let trendingData = await API({ URL: trendingUrl });
-trendingData = trendingData.data.topTrendingTitles.edges;
 let topActors = await API({ URL: topUrl });
+let popularMovie = await API({ URL: popularMovieUrl });
+// ===================Filtering Fetch Data=====================
+trendingData = trendingData.data.topTrendingTitles.edges;
+trendingData = trendingData.filter((e) => e.node.item.latestTrailer);
 topActors = topActors.data.topMeterNames.edges;
-export { API, API_KEY, trendingData, topActors };
+let popular20Movies = popularMovie.slice(0, 20);
+// Top Ration Data Filtering in trending Data
+let TopRating = trendingData
+  .filter(
+    (e) =>
+      e.node.item.latestTrailer &&
+      e.node.item.latestTrailer.primaryTitle.ratingsSummary.aggregateRating
+  )
+  .map((e) => [
+    e.node.item.latestTrailer.primaryTitle.ratingsSummary.aggregateRating,
+    e.node.item.latestTrailer.primaryTitle,
+  ]);
+TopRating = TopRating.sort()
+  .reverse()
+  .map((e) => e[1]);
+// ===================Export=====================
+export {
+  API,
+  API_KEY,
+  trendingData,
+  topActors,
+  TopRating,
+  popularMovie,
+  popular20Movies,
+};

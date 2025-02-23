@@ -1,0 +1,595 @@
+{
+  "data": {
+    "news": {
+      "__typename": "NewsConnection",
+      "edges": [
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65141491",
+            "byline": "Ethan Shanfeld",
+            "date": "2025-02-21T14:00:00Z",
+            "externalUrl": "https://variety.com/2025/film/news/moonlight-spring-breakers-imax-theaters-buy-tickets-1236314569/",
+            "articleTitle": {
+              "plainText": "A24’s ‘Moonlight’ and ‘Spring Breakers’ Coming to Imax Theaters for One Night Only"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm4168355584",
+              "url": "https://m.media-amazon.com/images/M/MV5BNDk0MzA2NDQ1M15BMl5BanBnXkFtZTgwNzQ5NDc5OTE@._V1_.jpg",
+              "height": 3840,
+              "width": 5760
+            },
+            "text": {
+              "plainText": "The next two installments of A24’s monthly screening series with Imax are “Moonlight” and “Spring Breakers.”\n\n“Moonlight,” Barry Jenkins’ best picture winner from 2016, will return to the big screen on Thursday, Feb. 27. “Spring Breakers,” Harmony Korine’s 2013 college crime comedy, will be re-released on Wednesday, March 19. Tickets are on sale for both movies here.\n\nBoth films will screen at Imax locations across the U.S. and at select locations internationally.\n\nThe A24 and Imax screening series kicked off last March with Alex Garland’s “Ex Machina,” ahead of the release of his 2024 blockbuster “Civil War.” Since then, the indie studio has rereleased fan-favorite films like “Hereditary,” “Midsommar,” “Uncut Gems,” “Oasis: Supersonic,” “Everything Everywhere All at Once,” “Stop Making Sense,” “The Lighthouse,” “The Witch,” “The Green Knight” and “Talk to Me.”\n\nRereleasing movies in theaters — whether for one night only or for an extended run — has become trendy as studios"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://variety.com/",
+                "label": "Variety - Film News"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65139838",
+            "byline": "Ryan Gajewski",
+            "date": "2025-02-20T18:21:53Z",
+            "externalUrl": "https://www.hollywoodreporter.com/movies/movie-news/leonardo-dicaprio-dwayne-johnson-emily-blunt-martin-scorsese-1236142006/",
+            "articleTitle": {
+              "plainText": "Leonardo DiCaprio, Dwayne Johnson, Emily Blunt Eyeing Hawaii-Set Crime Film for Martin Scorsese"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm2316192001",
+              "url": "https://m.media-amazon.com/images/M/MV5BMTg4ZWU1Y2QtYWVlZC00ZjFiLWI1OWQtYWE0ZDlmMTMwM2NhXkEyXkFqcGc@._V1_.jpg",
+              "height": 5324,
+              "width": 3901
+            },
+            "text": {
+              "plainText": "Martin Scorsese is looking to make a splash with a star-studded crime package set in Hawaii.\n\nA new package that hit the town would star Dwayne Johnson, Leonardo DiCaprio and Emily Blunt. Scorsese would direct the feature from a script by journalist and author Nick Bilton.\n\nThe fact-based untitled movie is said to be in the mold of Goodfellas and The Departed and center on a mob boss vying for control of the Hawaiian islands in the 1960s and 1970s.\n\nScorsese, Johnson, Blunt, DiCaprio, Bilton, Dany Garcia, Lisa Frechette and Rick Yorn serve as producers.\n\nBilton is known for such previous projects as HBO’s The Idol and the Netflix series Ashley Madison: Sex, Lies & Scandal.\n\nThe Hollywood Reporter reported last month that DiCaprio was in talks to star in a Scorsese-directed adaptation of Erik Larson’s best-selling book The Devil in the White City. The pair are known"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://www.hollywoodreporter.com/topic/movies",
+                "label": "The Hollywood Reporter - Movie News"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65139321",
+            "byline": "Jamie Lang",
+            "date": "2025-02-20T14:00:00Z",
+            "externalUrl": "https://variety.com/2025/music/asia/naruto-north-american-symphonic-concert-tour-1236313024/",
+            "articleTitle": {
+              "plainText": "‘Naruto’ North American Symphonic Concert Tour Unveils U.S. Dates and Locations (Exclusive)"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm1068577792",
+              "url": "https://m.media-amazon.com/images/M/MV5BNDE1YjE2MGQtZTU4Zi00MWFiLTgyOWQtZDc5YmVhNTlmZjM2XkEyXkFqcGc@._V1_.jpg",
+              "height": 1200,
+              "width": 1600
+            },
+            "text": {
+              "plainText": "“Naruto,” one of the world’s most popular and profitable manga and anime franchises, is getting its first-ever North American symphonic concert tour. Variety can now exclusively unveil the tour’s dates and locations.\n\nFresh off a successful European tour that drew over 60,000 fans, Naruto the Symphonic Experience will visit more than 60 North American cities, starting with a performance at the Old National Events Plaza in Evansville, Indiana.\n\nThe tour will feature acclaimed conductors Emily Marshall and Heidi Joosten, who will lead the orchestra in performing the most iconic songs and themes from the series. The music will be played live-to-picture,"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://variety.com/v/tv/",
+                "label": "Variety - TV News"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65139883",
+            "byline": "Ethan Shanfeld",
+            "date": "2025-02-20T18:45:00Z",
+            "externalUrl": "https://variety.com/2025/tv/news/green-day-movie-cast-1236313653/",
+            "articleTitle": {
+              "plainText": "Mckenna Grace, Fred Armisen, Bobby Lee and Sean Gunn Join Green Day-Inspired Comedy Movie (Exclusive)"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm502499842",
+              "url": "https://m.media-amazon.com/images/M/MV5BY2I2ZTNkMjEtYzZiNS00MTU4LTllYzktOTZmMGRiOTdmMzFhXkEyXkFqcGc@._V1_.jpg",
+              "height": 1960,
+              "width": 2960
+            },
+            "text": {
+              "plainText": "Mckenna Grace, Fred Armisen, Bobby Lee and Sean Gunn have joined the cast of “New Years Rev,” the Green Day-inspired comedy movie from writer-director Lee Kirk.\n\nThe film, a coming-of-age story about three friends who journey to Los Angeles under the false belief that their band is opening for Green Day on New Year’s Eve, is based on the California punk rockers’ early exploits from living in a tour van.\n\nLive Nation Productions describes the project as a “rowdy and mischievous” road-trip comedy “filled with adventures,” plus a live performance from Green Day.\n\nMason Thames, Kylr Coffman and Ryan Foust star as the band members alongside “Office” favorites Jenna Fischer and Angela Kinsey, Ignacio Diaz-Silverio and Keen Ruffalo.\n\n“Not only will ‘New Years Rev’ include wall to wall Green Day music and a concert at the Palladium in Hollywood, it’ll also feature some of the best and funniest actors working today."
+            },
+            "source": {
+              "homepage": {
+                "url": "http://variety.com/",
+                "label": "Variety Film + TV"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65139358",
+            "byline": "Alex Ritman",
+            "date": "2025-02-20T14:09:47Z",
+            "externalUrl": "https://variety.com/2025/film/global/james-bond-amazon-mgm-gain-creative-control-1236313930/",
+            "articleTitle": {
+              "plainText": "James Bond Shocker: Amazon MGM Gains Creative Control of 007 Franchise as Producers Barbara Broccoli and Michael G. Wilson Step Back"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm3543185921",
+              "url": "https://m.media-amazon.com/images/M/MV5BYjUxZGZkZjYtNzJjYi00ZThiLTg4NDQtNGQ1MWZlY2NjNjc3XkEyXkFqcGc@._V1_.jpg",
+              "height": 568,
+              "width": 1360
+            },
+            "text": {
+              "plainText": "Amazon MGM Studios is set to take creative control of the James Bond franchise.\n\nThe shock announcement — which is sure to shake and, indeed, stir the industry — was made Thursday, alongside the news that long-time producers and custodians of 007, Michael G. Wilson and Barbara Broccoli, would be stepping back.\n\nAs per details of the historic agreement, Amazon MGM Studios, Wilson and Broccoli have formed a new joint venture to house the James Bond intellectual property rights. The three parties will remain co-owners of the iconic franchise but Amazon MGM will have creative control.\n\n“Since his theatrical introduction over 60 years ago, James Bond has been one of the most iconic characters in filmed entertainment,” said Mike Hopkins, head of Prime Video and Amazon MGM Studios.\n\n“We are grateful to the late Albert R. Broccoli and Harry Saltzman for bringing James Bond to movie theatres around the world, and to Michael G."
+            },
+            "source": {
+              "homepage": {
+                "url": "http://variety.com/",
+                "label": "Variety - Film News"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65142537",
+            "byline": "Chris O'Falt",
+            "date": "2025-02-22T00:00:00Z",
+            "externalUrl": "https://www.indiewire.com/features/interviews/the-monkey-explained-oz-perkins-interview-1235097663/",
+            "articleTitle": {
+              "plainText": "‘The Monkey’ Director Oz Perkins on His Unusual Relationship to Horror, the Genre He Was Born Into"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm2042399234",
+              "url": "https://m.media-amazon.com/images/M/MV5BZWY4ZmM4NWUtZTQ1My00MjFjLTk2NDMtMWNiMDg0YTY5ZWU5XkEyXkFqcGc@._V1_.jpg",
+              "height": 1457,
+              "width": 2956
+            },
+            "text": {
+              "plainText": "Editor’s Note: The following story contains some spoilers for “The Monkey.”\n\nWhen you are the son of Anthony Perkins, and physically resemble the man who played one of the most iconic and recognizable characters in the history of the genre (Norman Bates in “Psycho”), your career path into horror is maybe to be expected. But its writer/director Osgood “Oz” Perkins’ relationship with the genre and the unique position he now finds himself working inside it are both unexpected and uncharted.\n\n“The way I have come to look at my trajectory, if anybody gives a fuck about my trajectory, it’s born into horror, right? Born into a royal family of horror, right?,” said Perkins in a recent interview with IndieWire about his new film “The Monkey.” “And you kind of uneasily pursue it, because that’s what some of us do — we follow the footsteps of the father,"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://www.indiewire.com",
+                "label": "Indiewire"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65143206",
+            "byline": "Anna Marie de la Fuente",
+            "date": "2025-02-22T12:29:04Z",
+            "externalUrl": "https://variety.com/2025/film/global/berlinale-co-production-market-efm-1236306097/",
+            "articleTitle": {
+              "plainText": "Family Dramas, Queer, Horror Themes Among Spanish Pics at Berlinale’s Co-Production Market Underscore the Breadth of Spanish Filmmaking"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm1653443074",
+              "url": "https://m.media-amazon.com/images/M/MV5BMGZlYTgzMmYtZGQ3NC00ODM0LTg1ZjgtY2UxYzZlMDI4Y2ZlXkEyXkFqcGc@._V1_.jpg",
+              "height": 800,
+              "width": 1200
+            },
+            "text": {
+              "plainText": "In its extensive coverage of Spain at Berlin, its European Film Market Country in Focus, Variety looks back at the country’s presence at this year’s EFM Co-Production Market.\n\nThe handful of Spanish titles at Berlinale’s 22nd Co-Production market was as diverse as they come. Aquí y Allí Films’ “Konbini” is a rare co-production with Japan while “Girl, Don’t Play” by Ainhoa Rodríguez calls itself an anti-film noir about female monsters. “Men and Days,” set in Barcelona and London, is a gay romantic drama while “March 14th,” a Vff Talent Highlight Award winner at the Talent Project Market, and “Death in Torrevieja” are family dramas, the latter with a murder mystery twist in a resort town.\n\nWhat united the five projects, however – and this is typical of Spanish cinema made by its new generation of cineastes – is their strong social issue focus.\n\nAll five pics had their"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://variety.com/",
+                "label": "Variety - Film News"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65143189",
+            "byline": "BJ Colangelo",
+            "date": "2025-02-22T12:00:48Z",
+            "externalUrl": "https://www.slashfilm.com/1795025/the-brutalist-director-brady-corbet-funny-games-horror-classic/",
+            "articleTitle": {
+              "plainText": "The Director Of The Brutalist Once Starred In A Brutal Horror Classic"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm1770883586",
+              "url": "https://m.media-amazon.com/images/M/MV5BYjc4NDMzMWUtM2NlYi00MjUwLTk2NmYtZThiMDg4NmU3YzViXkEyXkFqcGc@._V1_.jpg",
+              "height": 438,
+              "width": 780
+            },
+            "text": {
+              "plainText": "It's become a fun pub trivia act to be able to rattle off the legion of beloved performers who got their start on the big screen by acting in horror movies. It's less common, however, to learn about actors famous for their roles in horror films pivoting to directing and nabbing an Academy Award nomination for Best Director in the process. But that's precisely what happened with Brady Corbet, the director behind one of the frontrunners for Best Picture (at the time of writing) and a film that /Film's Chris Evangelista called \"an overwhelming triumph\" in his review, \"The Brutalist.\"\n\nCorbet, for those not familiar, made his feature directorial debut in 2015 with \"The Childhood of a Leader.\" Loosely adapted from Jean-Paul Sartre's short story of the same name, the film centers on an American boy living in France with his authoritarian parents during the Treaty of Versailles and explores"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://www.slashfilm.com",
+                "label": "Slash Film"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65143158",
+            "byline": "Ellen E Jones",
+            "date": "2025-02-22T11:55:05Z",
+            "externalUrl": "https://www.theguardian.com/film/2025/feb/22/bong-joon-ho-interview-mickey-17-robert-pattinson-parasite-okja",
+            "articleTitle": {
+              "plainText": "Bong Joon Ho: ‘I wish I had Ken Loach’s energy, but I’m just thinking about nap time’"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm3194916865",
+              "url": "https://m.media-amazon.com/images/M/MV5BYjk1Y2U4MjQtY2ZiNS00OWQyLWI3MmYtZWUwNmRjYWRiNWNhXkEyXkFqcGc@._V1_.jpg",
+              "height": 3556,
+              "width": 2400
+            },
+            "text": {
+              "plainText": "How do you follow up an Oscar winner like Parasite? If you’re the South Korean auteur, you make a sci-fi satire where Robert Pattinson dies over and over again. The director discusses the inspirational Loach and Mike Leigh and why it’s hard being a ‘middle-aged film-maker’\n\nWe are in the run-up to the release of Bong Joon Ho’s latest, Mickey 17, and Warner Bros has got the Oscar-winning Korean director stashed away in what appears to be some kind of basement storage room, with grey-painted brickwork and exposed wiring. In fact, this room could pass for one of the “gritty and kind of nasty” cargo-container-packed cabins of his film’s spaceship setting.\n\nNot that anyone is complaining. Bong, who speaks good English but prefers to conduct interviews via his longtime interpreter Sharon Choi, appears cheerful throughout our conversation, taking occasional sips from a takeaway coffee cup, while"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://www.guardian.co.uk/film",
+                "label": "The Guardian - Film News"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65143190",
+            "byline": "Nick Staniforth",
+            "date": "2025-02-22T11:45:41Z",
+            "externalUrl": "https://www.slashfilm.com/1792737/who-plays-zachary-beck-reacher-season-3-actor-anthony-michael-hall/",
+            "articleTitle": {
+              "plainText": "Why Zachary Beck From Reacher Season 3 Looks So Familiar"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm1754106370",
+              "url": "https://m.media-amazon.com/images/M/MV5BMTEzNjcxZjctN2UyMS00NDE5LTkwNmEtMmM5NGQ3ZTY1NGY1XkEyXkFqcGc@._V1_.jpg",
+              "height": 438,
+              "width": 780
+            },
+            "text": {
+              "plainText": "This article contains spoilers for \"Reacher\" Season 3.\n\nOne of the recurring aspects of \"Reacher,\" apart from bad guys with short lifespans, is middlemen who get involved with the wrong people. In Season 3, this position is filled by Bizarre Bazaar CEO Zachary Beck, who has already seen his family suffer at the hands of his \"business partner,\" Julius McCabe, formerly known as Xavier Quinn (Brian Tee). To make matters worse, all this corruption and illegal activity has caught the attention of DEA agent Susan Duffy (Sonya Cassidy), who, following a botched undercover operation, sends in our boy Jack Reacher (Alan Ritchson) to keep tabs on what's happening. After Reacher poses as potential muscle for the businessman, Beck's world soon gets turned upside down as traitorous activity begins to reveal itself, deals go south, and the bad guys closest to him end up very, very dead.\n\nUnderstandably, it's a stressful situation to be in,"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://www.slashfilm.com",
+                "label": "Slash Film"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65143133",
+            "byline": "Naman Ramachandran",
+            "date": "2025-02-22T11:15:00Z",
+            "externalUrl": "https://variety.com/2025/film/news/junglee-malayalam-ronth-1236316189/",
+            "articleTitle": {
+              "plainText": "India’s Junglee Pictures Sets Malayalam-Language Debut With Cop Drama ‘Night Patrol’ (Exclusive)"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm3716909570",
+              "url": "https://m.media-amazon.com/images/M/MV5BZjU3ZThmODctNTZjOS00YjQ1LWJmNWYtYmE1MzMwNGY1Y2VmXkEyXkFqcGc@._V1_.jpg",
+              "height": 667,
+              "width": 1000
+            },
+            "text": {
+              "plainText": "India’s Hindi studio powerhouse Junglee Pictures is making its first foray into Malayalam-language cinema with “Ronth” (“Night Patrol”), a gritty police drama helmed by award-winning filmmaker Shahi Kabir.\n\nThe film, which has wrapped production and is currently in post, stars acclaimed actors Dileesh Pothan (Berlinale selection “Tiger’s Pond”) and Roshan Mathew (Busan winner “Paradise”) as two cops whose night patrol shift becomes a pressure cooker of professional challenges and personal conflicts. The supporting cast includes Sudhi Koppa, Arun Cherukavil, Lakshmi Menon, Krisha Kurup and Nandanunni.\n\nKabir, who nabbed India’s National Film Award for best screenplay with “Nayattu” (2021), brings his signature blend of social commentary and stark realism to the project. His writing credits include the just released cop drama “Officer on Duty” and thrillers “Ela Veezha Poonchira” (2022), which he also directed, and “Joseph” (2018).\n\n“The moment we heard the narration, we were hooked; it was an easy yes from all of us,"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://variety.com/",
+                "label": "Variety - Film News"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65143191",
+            "byline": "Rafael Motamayor",
+            "date": "2025-02-22T11:00:08Z",
+            "externalUrl": "https://www.slashfilm.com/1772653/cobra-kai-seasons-ranked/",
+            "articleTitle": {
+              "plainText": "Every Season Of Cobra Kai Ranked"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm2005764610",
+              "url": "https://m.media-amazon.com/images/M/MV5BYTRhNTEwODgtNWU2Ni00N2E3LWFiNmMtYWRlZGFjNzk1OWFkXkEyXkFqcGc@._V1_.jpg",
+              "height": 438,
+              "width": 780
+            },
+            "text": {
+              "plainText": "\"Cobra Kai\" is a miracle of a TV show. It's a legacy sequel based on an '80s franchise that started off strong with one of the best family movies of all time before quickly going the way of many other properties of the time, resulting in increasingly diminishing returns. \"Cobra Kai\" not only makes for a thrilling reboot by focusing on a new generation of kids learning karate, but it's also an effective remake of the tropes and formula of the original \"Karate Kid\" — this time with the twist of Cobra Kai being the good guys (at least at first).\n\nPicking up with Johnny Lawrence over 30 years after the events of the original \"Karate Kid\" movie, \"Cobra Kai\" follows the character as he seeks redemption for a lifetime of bad luck and resentment by reopening the Cobra Kai dojo and accepting a scrawny new kid on the block as his pupil,"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://www.slashfilm.com",
+                "label": "Slash Film"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65142982",
+            "byline": "Jonathan Romney",
+            "date": "2025-02-22T08:00:02Z",
+            "externalUrl": "https://www.theguardian.com/film/2025/feb/22/berlin-film-festival-2025-roundup-75th-berlinale-tricia-tuttle-lucile-hadzihalilovic-marion-cotillard-the-ice-tower-ethan-hawke-richard-linklater-blue-moon",
+            "articleTitle": {
+              "plainText": "Berlin film festival 2025 roundup – a new boss, a flawless fairytale and Ethan Hawke’s finest hour"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm2706328064",
+              "url": "https://m.media-amazon.com/images/M/MV5BOTk2Y2E4N2EtZjE4ZS00NWNkLWE2ZTYtNWI5MDc4ZmY2NTE5XkEyXkFqcGc@._V1_.jpg",
+              "height": 874,
+              "width": 700
+            },
+            "text": {
+              "plainText": "At a snowy Berlinale, against a backdrop of political divisions, this year’s standouts include Lucile Hadžihalilović’s The Ice Tower, Richard Linklater’s Broadway biopic of Lorenz Hart, and intensely sexual romance starring Jessica Chastain\n\nBerlin can be a touch inhospitable in February; this year was no exception, with visitors to the film festival enduring heavy snow, treacherous pavements and a two-day, city-wide transport strike. But the Berlinale itself is contending with a frosty climate. Traditionally a hub for film-makers of forthright, oppositional persuasions, it must now attempt to flourish in the face of Europe’s swing to the right, with Germany’s elections imminent and the troubling rise of the extremist AfD party.\n\nEvery new festival head faces the challenge of reinventing the event they have inherited, and in the Berlinale’s 75th year, the bar was set especially high given the scrutiny the festival has received. Last"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://www.guardian.co.uk/film",
+                "label": "The Guardian - Film News"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65142780",
+            "byline": "Pat Saperstein",
+            "date": "2025-02-22T04:13:59Z",
+            "externalUrl": "https://variety.com/2025/film/news/george-armitage-dead-grosse-pointe-blank-miami-blues-1236316150/",
+            "articleTitle": {
+              "plainText": "George Armitage, ‘Grosse Pointe Blank’ and ‘Miami Blues’ Director, Dies at 83"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm2628946434",
+              "url": "https://m.media-amazon.com/images/M/MV5BYmI3MGM2YTctYjQyZC00YWQ3LWI2ZGItY2VhMDk0NTVmYmNjXkEyXkFqcGc@._V1_.jpg",
+              "height": 800,
+              "width": 1280
+            },
+            "text": {
+              "plainText": "George Armitage, who directed, wrote and produced films including “Grosse Pointe Blank” and “Miami Blues,” died Saturday in Playa del Rey, his son Brent confirmed. He was 83.\n\nRaised in Hartford, Conn., Armitage started out in the 20th Century Fox mailroom before becoming associate producer on the long-running series “Peyton Place” in the 1960s. He met Roger Corman on the Fox lot and moved into feature films, writing the Corman-produced 1970 comedy “Gas! – Or – It Became Necessary to Destroy the World in Order to Save It.”\n\nHe continued making films for Corman and his brother Gene Corman, moving into directing with “Private Duty Nurses.” The 1972 Blaxploitation film “Hit Man,” which he directed and co-wrote, starred Pam Grier and Bernie Casey. Next up was “Vigilante Force,” with Kris Kristofferson and Jan-Michael Vincent, and the TV movie “Hot Rod.”\n\n“Kaplan, Demme, Dante, Arkush and me… We were making little 45 Rpm rock ’n’ roll movies."
+            },
+            "source": {
+              "homepage": {
+                "url": "http://variety.com/",
+                "label": "Variety - Film News"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65142731",
+            "byline": "Angelique Jackson",
+            "date": "2025-02-22T02:52:42Z",
+            "externalUrl": "https://variety.com/2025/film/news/aafca-awards-tyler-perry-nicole-avant-amber-ruffin-dei-jokes-1236315669/",
+            "articleTitle": {
+              "plainText": "Tyler Perry Salutes Nicole Avant, Amber Ruffin Jokes About Dei Rollbacks and More From Inside the Aafca Awards"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm1404078594",
+              "url": "https://m.media-amazon.com/images/M/MV5BYTZiOTk0YTEtYzZjOC00YzBhLWFkZmMtNWUxYTQ4YjZjNmI1XkEyXkFqcGc@._V1_.jpg",
+              "height": 1835,
+              "width": 2750
+            },
+            "text": {
+              "plainText": "Tyler Perry made a special trip to Los Angeles to present his friend Nicole Avant with the Beacon Award at the 16th annual African American Film Critics Association Awards.\n\n“I don’t know why I’m working like I’m still broke,” Perry joked about arriving at the Beverly Wilshire Hotel straight from the airport, then hopping back on the plane when the show was over.\n\nBut the quick roundtrip was necessary to support Aafca’s mission of uplifting Black storytellers — “especially in this climate when there’s so many attacks on who we are, what our stories are,” Perry said — and to salute Avant, who he emphasized is “Hollywood royalty” as the daughter of the late Jacqueline Avant, a philanthropist, and Clarence Avant, the music executive known as “The Black Godfather.”\n\nOn the red carpet, Nicole Avant told Variety her parents would be proud to see her receive this specific honor."
+            },
+            "source": {
+              "homepage": {
+                "url": "http://variety.com/",
+                "label": "Variety - Film News"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65142648",
+            "byline": "Alison Foreman",
+            "date": "2025-02-22T01:30:00Z",
+            "externalUrl": "https://www.indiewire.com/news/events/indie-spirit-awards-2025-preshow-announcement-film-independent-1235097559/",
+            "articleTitle": {
+              "plainText": "IndieWire Hits the 2025 Indie Spirit Awards — Watch Exclusive Filmmaker Interviews Only on Our Pre-Show"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm2143193602",
+              "url": "https://m.media-amazon.com/images/M/MV5BNjAxMDg1ODQtZjJiZC00YzYyLTg0ZWYtN2Y0Yzg0ODRkYjYxXkEyXkFqcGc@._V1_.jpg",
+              "height": 2510,
+              "width": 3765
+            },
+            "text": {
+              "plainText": "As indie filmmakers from around the globe converge on California for the 40th Independent Spirit Awards, IndieWire — the voice of creative independence — is preparing for a groundbreaking day on the arrivals carpet in Santa Monica.\n\nThe celebration from Film Independent will air at 5 p.m. Et on Saturday, February 22, but while fans wait for festivities to begin, they can meet IndieWire on the red (technically blue at the Spirits) carpet for informed interviews with many of the event’s top honorees. Yes, for the first time in our nearly 30-year history, IndieWire is hosting a pre-show! We’ll talk with many of the presenters, nominees, and other artists making fearless magic at this critical time for storytelling, while we blaze a trail of our own.\n\nPowered by LiveU technology, our show will bring IndieWire viewers exclusive conversations with some of Hollywood’s most respected decision-makers and auteurs. We’ll also"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://www.indiewire.com",
+                "label": "Indiewire"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65142607",
+            "byline": "J. Kim Murphy",
+            "date": "2025-02-22T00:11:58Z",
+            "externalUrl": "https://variety.com/2025/film/news/spider-man-4-delayed-two-weeks-tom-holland-nolan-odyssey-1236316067/",
+            "articleTitle": {
+              "plainText": "Tom Holland’s ‘Spider-Man 4’ Gets New July 2026 Release, Moves Two Weeks Out From Christopher Nolan’s ‘The Odyssey’"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm3867271681",
+              "url": "https://m.media-amazon.com/images/M/MV5BM2FhNzJjNDUtNDk1Mi00YmQ5LTgyOGEtY2RkOWRjODBhZDJkXkEyXkFqcGc@._V1_.jpg",
+              "height": 562,
+              "width": 1000
+            },
+            "text": {
+              "plainText": "Sony has nudged the release for Tom Holland’s fourth “Spider-Man” installment by one week, shifting it from July 24, 2026 to a new date of July 31, 2026. That now positions the Marvel entry for launch two weeks after Universal’s July 17, 2026 release of “The Odyssey,” Christopher Nolan’s next film which also stars Holland.\n\nAlong with giving Holland some breathing room from opening two prospective blockbusters within a week of one another, the adjustment also has key repercussions for exhibitor operations. Before Sony’s scheduling change, the next live-action “Spider-Man” would have released just one week after “The Odyssey.” That film continues Nolan’s decades-long relationship with Imax, shooting with the company’s powerful cameras and negotiating a dedicated theatrical window in its premium auditoriums. Presumably, Sony is also looking to release the new “Spider-Man” to Imax and other premium large format screens, as it has with its previous Marvel Comics adaptations."
+            },
+            "source": {
+              "homepage": {
+                "url": "http://variety.com/",
+                "label": "Variety - Film News"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65142507",
+            "byline": "Christian Zilko",
+            "date": "2025-02-21T23:39:59Z",
+            "externalUrl": "https://www.indiewire.com/criticism/movies/timestamp-review-1235097686/",
+            "articleTitle": {
+              "plainText": "‘Timestamp’ Review: A Tableau of Student Life in Ukraine Is an Ode to Those Who Fight for Normalcy in Times of Chaos"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm4240148994",
+              "url": "https://m.media-amazon.com/images/M/MV5BYWI5OWRjMDMtYjc0MC00OWE1LWI4YmQtZGIxYWFjNTI5NDEzXkEyXkFqcGc@._V1_.jpg",
+              "height": 796,
+              "width": 1190
+            },
+            "text": {
+              "plainText": "It takes a staggering amount of arrogance and privilege to even momentarily consider using a phrase like “Ukraine War Documentary Fatigue.” Russia’s unprovoked invasion of Ukraine has resulted in the bloodiest war on European soil since WWII, and represents the largest threat to the post-Cold War international order that we’ve seen to date. It could very well end up being viewed as the genesis of an age of autocrats battling each other to expand their territories, with potentially catastrophic results looming in the near future. Not to mention the tens of thousands of Ukrainians who have already died in the war, and countless more who have had their homes destroyed and their lives permanently altered. The fact that brave documentarians have been able to capture so much of it is a remarkable achievement for humanity. When one’s biggest complaint is that they’re making prestigious film festivals feel repetitive,"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://www.indiewire.com",
+                "label": "Indiewire"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65142535",
+            "byline": "Carolyn Giardina",
+            "date": "2025-02-21T23:37:30Z",
+            "externalUrl": "https://variety.com/2025/artisans/news/ai-hpa-tech-retreat-1236312156/",
+            "articleTitle": {
+              "plainText": "AI Business, Creativity and Jobs Take Center Stage at Hpa Tech Retreat: ‘What We’re Trying to Be Is Pixar’"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm3997459457",
+              "url": "https://m.media-amazon.com/images/M/MV5BNWRiY2E2OTUtYmNmNC00OTlmLTlhMTMtODJhZDRjNTVjZjQwXkEyXkFqcGc@._V1_.jpg",
+              "height": 1540,
+              "width": 2839
+            },
+            "text": {
+              "plainText": "It was fitting that the acquisition of generative AI tech company Metaphysic by Dneg Group’s Brahma AI arm was announced on Tuesday, as a large part of the annual Hpa Tech Retreat – which was held this week in Palm Springs – was largely dedicated to AI and this deal underscored several of the predicted trends, including convergence.\n\n“Convergence is one of the main things that we will see in 2025,” I2A2 president and CEO Renard Jenkins forecasted, while showing a slide with a lengthy list of just some of the AI startups that are targeting the media and entertainment space. “That can be good and bad, because if your favorite tool gets purchased by someone who intends to maybe keep it under wraps or they fully don’t understand its value, then all of a sudden you’ve got to learn something new. That changes your workflow, what happens in your development,"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://variety.com/",
+                "label": "Variety - Film News"
+              },
+              "description": null
+            }
+          }
+        },
+        {
+          "node": {
+            "__typename": "News",
+            "id": "ni65142578",
+            "byline": "Jeremy Smith",
+            "date": "2025-02-21T23:00:59Z",
+            "externalUrl": "https://www.slashfilm.com/1785274/was-seinfeld-improvised/",
+            "articleTitle": {
+              "plainText": "Was Seinfeld Improvised? Here's The Truth"
+            },
+            "image": {
+              "__typename": "Image",
+              "id": "rm817728002",
+              "url": "https://m.media-amazon.com/images/M/MV5BOWIyNGNhN2ItMjE5Yi00MTg1LTg1NzUtMjExYjFhYjcxYjAwXkEyXkFqcGc@._V1_.jpg",
+              "height": 438,
+              "width": 780
+            },
+            "text": {
+              "plainText": "There isn't a more rigidly formulaic television genre than the sitcom. Over a tightly telescoped span of 22 minutes, writers must introduce, escalate and resolve a situation, all while giving audiences the belly laughs that have hopefully made the show appointment viewing. They typically only have a week from table read to filming, which leaves the production some room for adjustments, but little in the way of experimentation. It's all got to be on the page.\n\nEven for a show like \"Seinfeld,\" where the cast maintained a high degree of spontaneity throughout each episode? Where Kramer's (Michael Richards) abrupt entrances seem to throw off the entire gravity of Jerry's (Jerry Seinfeld) apartment? Where Elaine's (Julia Louis-Dreyfus) signature shoves feel like they come out of nowhere? Where the banter takes so many unpredictable twists and turns that the actors appear to be consistently off-guard?\n\nIf you're not familiar with how sitcom production works,"
+            },
+            "source": {
+              "homepage": {
+                "url": "http://www.slashfilm.com",
+                "label": "Slash Film"
+              },
+              "description": null
+            }
+          }
+        }
+      ],
+      "total": 884801,
+      "pageInfo": {
+        "__typename": "NewsPageInfo",
+        "hasNextPage": true,
+        "endCursor": "NjUxNDI0NTJ8MjAyNS0wMi0yMSAyMzowMDowMA"
+      }
+    }
+  }
+}

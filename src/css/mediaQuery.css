@@ -247,11 +247,13 @@
   div.top-container div.container {
     grid-template-columns: repeat(10, 42%);
   }
-  div.top-container {
-    height: 55vh;
+  /* ========================================================================================== */
+  div.popularInterest-section {
+    height: 30vh;
+    margin-bottom: 100%;
   }
-  div.container div.top-box {
-    /* grid-template-rows: 58% auto; */
+  div.popularInterest {
+    grid-template-columns: repeat(49, 75%);
   }
 }
 @media screen and (min-width: 900px) {

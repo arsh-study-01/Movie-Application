@@ -1,0 +1,41 @@
+{
+  "genres": [
+    { "description": "Action", "endpoint": "/chart/popular/genre/action" },
+    {
+      "description": "Adventure",
+      "endpoint": "/chart/popular/genre/adventure"
+    },
+    {
+      "description": "Animation",
+      "endpoint": "/chart/popular/genre/animation"
+    },
+    {
+      "description": "Biography",
+      "endpoint": "/chart/popular/genre/biography"
+    },
+    { "description": "Comedy", "endpoint": "/chart/popular/genre/comedy" },
+    { "description": "Crime", "endpoint": "/chart/popular/genre/crime" },
+    {
+      "description": "Documentary",
+      "endpoint": "/chart/popular/genre/documentary"
+    },
+    { "description": "Drama", "endpoint": "/chart/popular/genre/drama" },
+    { "description": "Family", "endpoint": "/chart/popular/genre/family" },
+    { "description": "Fantasy", "endpoint": "/chart/popular/genre/fantasy" },
+    {
+      "description": "Film-Noir",
+      "endpoint": "/chart/popular/genre/film_noir"
+    },
+    { "description": "History", "endpoint": "/chart/popular/genre/history" },
+    { "description": "Horror", "endpoint": "/chart/popular/genre/horror" },
+    { "description": "Music", "endpoint": "/chart/popular/genre/music" },
+    { "description": "Musical", "endpoint": "/chart/popular/genre/musical" },
+    { "description": "Mystery", "endpoint": "/chart/popular/genre/mystery" },
+    { "description": "Romance", "endpoint": "/chart/popular/genre/romance" },
+    { "description": "Sci-Fi", "endpoint": "/chart/popular/genre/sci_fi" },
+    { "description": "Sport", "endpoint": "/chart/popular/genre/sport" },
+    { "description": "Thriller", "endpoint": "/chart/popular/genre/thriller" },
+    { "description": "War", "endpoint": "/chart/popular/genre/war" },
+    { "description": "Western", "endpoint": "/chart/popular/genre/western" }
+  ]
+}
